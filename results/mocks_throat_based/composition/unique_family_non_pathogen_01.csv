@@ -1,0 +1,26 @@
+accession_id,is_pathogen,accession_taxid,superkingdom,phylum,class,order,family,genus,species,superkingdom_taxid,phylum_taxid,class_taxid,order_taxid,family_taxid,genus_taxid,species_taxid
+NC_012756.1,0,644007,Viruses,Uroviricota,Caudoviricetes,unclassified Caudoviricetes order,unclassified Caudoviricetes family,unclassified Caudoviricetes genus,Streptococcus phage PH10,10239,2731618,2731619,,,,644007
+NZ_AP019735.1,0,2585118,Bacteria,Bacteroidota,Bacteroidia,Bacteroidales,Rikenellaceae,Alistipes,Alistipes communis,2,976,200643,171549,171550,239759,2585118
+NZ_CP008852.1,0,484770,Bacteria,Bacillota,Negativicutes,Selenomonadales,Sporomusaceae,Pelosinus,Pelosinus sp. UFO1,2,1239,909932,909929,1843490,365348,484770
+NZ_CP012672.1,0,56,Bacteria,Myxococcota,unclassified Myxococcota class,Polyangiales,Polyangiaceae,Sorangium,Sorangium cellulosum,2,2818505,,3031712,49,39643,56
+NZ_CP017038.2,0,712710,Bacteria,Bacteroidota,Bacteroidia,Bacteroidales,Tannerellaceae,Tannerella,Tannerella serpentiformis,2,976,200643,171549,2005525,195950,712710
+NZ_CP017042.1,0,1884263,Bacteria,Bacillota,Negativicutes,Selenomonadales,Selenomonadaceae,Selenomonas,Selenomonas sp. oral taxon 920,2,1239,909932,909929,1843491,970,1884263
+NZ_CP017761.1,0,1911586,Bacteria,Bacillota,Bacilli,Lactobacillales,Carnobacteriaceae,Marinilactibacillus,Marinilactibacillus sp. 15R,2,1239,91061,186826,186828,191769,1911586
+NZ_CP019668.1,0,95486,Bacteria,Pseudomonadota,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Burkholderia,Burkholderia cenocepacia,2,1224,28216,80840,119060,32008,95486
+NZ_CP027228.1,0,114527,Bacteria,Bacillota,Clostridia,Eubacteriales,Eubacteriales Family XIII. Incertae Sedis,Mogibacterium,Mogibacterium diversum,2,1239,186801,186802,543314,86331,114527
+NZ_CP027286.1,0,46867,Bacteria,Bacillota,Clostridia,Eubacteriales,Clostridiaceae,Clostridium,Clostridium chauvoei,2,1239,186801,186802,31979,1485,46867
+NZ_CP033459.1,0,2133944,Bacteria,Bacteroidota,Bacteroidia,Bacteroidales,Prevotellaceae,Pseudoprevotella,Pseudoprevotella muciniphila,2,976,200643,171549,171552,2884814,2133944
+NZ_CP036259.1,0,2377,Bacteria,Bacillota,Negativicutes,Selenomonadales,Sporomusaceae,Sporomusa,Sporomusa termitida,2,1239,909932,909929,1843490,2375,2377
+NZ_CP039712.1,0,2571750,Bacteria,Bacillota,Bacilli,Lactobacillales,Enterococcaceae,Vagococcus,Vagococcus zengguangii,2,1239,91061,186826,81852,2737,2571750
+NZ_CP046313.1,0,84135,Bacteria,Bacillota,Bacilli,Bacillales,unclassified Bacillales family,Gemella,Gemella sanguinis,2,1239,91061,1385,,1378,84135
+NZ_CP047311.1,0,303,Bacteria,Pseudomonadota,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Pseudomonas putida,2,1224,1236,72274,135621,286,303
+NZ_CP050497.1,0,120683,Bacteria,Spirochaetota,Spirochaetia,Spirochaetales,Treponemataceae,Treponema,Treponema vincentii,2,203691,203692,136,2845253,157,69710
+NZ_CP066560.1,0,731,Bacteria,Pseudomonadota,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Histophilus,Histophilus somni,2,1224,1236,135625,712,214906,731
+NZ_CP068103.1,0,54005,Bacteria,Bacillota,Tissierellia,Tissierellales,Peptoniphilaceae,Peptoniphilus,Peptoniphilus harei,2,1239,1737404,1737405,1570339,162289,54005
+NZ_CP072246.1,0,357276,Bacteria,Bacteroidota,Bacteroidia,Bacteroidales,Bacteroidaceae,Phocaeicola,Phocaeicola dorei,2,976,200643,171549,815,909656,357276
+NZ_CP085178.1,0,1255,Bacteria,Bacillota,Bacilli,Lactobacillales,Lactobacillaceae,Pediococcus,Pediococcus pentosaceus,2,1239,91061,186826,33958,1253,1255
+NZ_CP098491.1,0,1423,Bacteria,Bacillota,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacillus subtilis,2,1239,91061,1385,186817,1386,1423
+NZ_CP117966.1,0,301301,Bacteria,Bacillota,Clostridia,Eubacteriales,Lachnospiraceae,Roseburia,Roseburia hominis,2,1239,186801,186802,186803,841,301301
+NZ_CP118095.1,0,87541,Bacteria,Bacillota,Bacilli,Lactobacillales,Aerococcaceae,Aerococcus,Aerococcus christensenii,2,1239,91061,186826,186827,1375,87541
+NC_001422.1,0,10847,Viruses,Phixviricota,Malgrandaviricetes,Petitvirales,Microviridae,Sinsheimervirus,Sinsheimervirus phiX174,10239,2732412,2732413,2732414,10841,1910954,10847
+NC_000866.4,0,10665,Viruses,Uroviricota,Caudoviricetes,unclassified Caudoviricetes order,Straboviridae,Tequatrovirus,Tequatrovirus T4,10239,2731618,2731619,,2946170,10663,10665
