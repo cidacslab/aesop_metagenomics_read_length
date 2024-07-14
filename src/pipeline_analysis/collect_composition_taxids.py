@@ -1,5 +1,4 @@
 import os, sys, csv
-import kraken_report_parser as KrakenParser
 
 
 def get_files_in_folder(input_path, input_extension):
@@ -13,13 +12,13 @@ def get_files_in_folder(input_path, input_extension):
     return files_fullpath
 
 
-def get_all_tax_ids(composition_file, taxids_set, index = 2):
+def get_all_tax_ids(composition_file, taxids_set, column_index = 2):
     print(f"Get taxid from: {composition_file}")
     with open(composition_file, "r") as file:
         csv_reader = csv.reader(file, delimiter = ",")
         next(csv_reader) # ignore header
         for row in csv_reader:
-            taxid = row[index].strip()
+            taxid = row[column_index].strip()
             taxids_set.add(taxid)
 
 
