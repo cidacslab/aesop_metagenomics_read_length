@@ -25,7 +25,8 @@ output_file="$3"
 count=0  # Variable to track the number of accessions used
 
 # Get the accession numbers from the CSV file (excluding the first line/header), shuffle the list, and save it to a temporary file
-awk -F '\t' 'NR>1 {print $1}' "$tsv_file" > accession_file.txt
+# awk -F '\t' 'NR>1 {print $1}' "$tsv_file" > accession_file.txt
+awk -F '\t' '{print $1}' "$tsv_file" > accession_file.txt
 
 # Create an empty output file
 >"$output_file"
