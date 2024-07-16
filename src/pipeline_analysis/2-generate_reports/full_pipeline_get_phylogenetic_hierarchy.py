@@ -16,12 +16,12 @@ def count_abundance_by_species(accession_taxid_counts, accession_abundance, tree
         continue
       tree_by_taxid[taxid].set_abundance(counts)
 
-  total_reads = float(sum(accession_abundance.values()))
+  total_reads = float(sum([accession_abundance[accession].count for accession in accession_abundance]))
   for taxid, node in tree_by_taxid.items():
     if node.level == 'S' or node.level_enum == KrakenParser.Level.G:
       level = node.level_enum - KrakenParser.Level.G + 1
       abundance = node.acumulated_abundance
-      nt_rpm = int((abundance/total_reads)*1000000)
+      nt_rpm = int((abundance*1000000)/total_reads)
       output_content += f"{node.parent.taxid},{level},{taxid},{node.name},{abundance},{nt_rpm}\n"
 
   with open(output_file, "w") as file:
@@ -45,7 +45,7 @@ def count_abundance_by_accession_reads(accession_taxid_counts, accession_abundan
       tree_by_taxid[taxid].set_abundance(counts)
 
     accession_lineage = accession_metadata[accession_id]
-    output_content += f"{accession_id},{accession_abundance[accession_id]}"
+    output_content += f"{accession_id},{accession_abundance[accession_id].count}"
     for taxid, name in accession_lineage:
       abundance = 0
       if taxid in tree_by_taxid:
@@ -57,17 +57,16 @@ def count_abundance_by_accession_reads(accession_taxid_counts, accession_abundan
     file.write(output_content)  
 
 
-def get_accession_taxid_abundance(input_file, output_file):
-  print(f"Get accession taxid abundance from: {input_file}")
+def get_accession_taxid_abundance(kout_file, output_file):
+  print(f"Get accession taxid abundance from: {kout_file}")
   accession_taxid_counts = {}
 
-  with open(input_file, 'r') as classified_file:
-    for line in classified_file:
+  with open(kout_file, 'r') as kraken_file:
+    for line in kraken_file:
       line = line.strip().split()
-      if len(line) >= 2:
-        splits = line[0][1:].split('.')
-        accession_id = splits[0] + "." + splits[1].split('_')[0]
-        taxid = line[1].split("|")[1]
+      if len(line) >= 3 and line[0] == "C":
+        accession_id = line[1].rsplit('_', 2)[0].strip()
+        taxid = line[2].strip()
         
         if accession_id not in accession_taxid_counts:
           accession_taxid_counts[accession_id] = {}
@@ -115,15 +114,7 @@ def get_accession_taxid_by_level(input_file):
 
 
 def main():
-  #folder_path = sys.argv[1] if len(sys.argv) > 1 else ''
-  # input_extension = '.fasta'
-  # input_fasta_path = r"/scratch/pablo.viana/aesop/throat_mocks/2-bowtie_output"
-  # input_kraken_path = r"/scratch/pablo.viana/aesop/throat_mocks/3-kraken_results"
-  # input_metadata_path = r"/opt/storage/raw/aesop/metagenomica/biome/throat_mocks_done"
-  # output_path = r"/opt/storage/raw/aesop/metagenomica/biome/throat_mocks/kraken_results"
-  # input_path = sys.argv[1]
-  # output_path = sys.argv[2]  
-  base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/mocks_sample_based"
+  base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/results/mocks_throat_based"
   input_extension = '_R1.fastq'
   input_fastq_path = f"{base_path}/mock_metagenomes"
   input_kraken_path = f"{base_path}/pipeline_outputs/2-kraken_results"
@@ -141,16 +132,15 @@ def main():
 
     accession_abundance = count_reads_by_sequence_id(file)
 
-    input_path = os.path.join(input_kraken_path, filename)
-    report_file = os.path.join(input_path, filename + ".report")
-    _, tree_by_taxid = KrakenParser.load_kraken_report_tree(report_file)        
+    report_file = os.path.join(input_kraken_path, filename + ".kreport")
+    _, tree_by_taxid = KrakenParser.load_kraken_report_tree(report_file)
 
     splits = filename.split("_")
     meta_filename = "_".join(splits[0:-2])
-    metadata_file = os.path.join(input_metadata_path, meta_filename + "_metadata.csv")
+    metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
     accession_metadata = get_accession_taxid_by_level(metadata_file)
 
-    accession_taxid_abundance_file = os.path.join(input_path, filename + ".class")
+    accession_taxid_abundance_file = os.path.join(input_kraken_path, filename + ".kout")
     output_class_file = os.path.join(output_path, filename + "_out.csv")
     accession_taxid_counts = get_accession_taxid_abundance(accession_taxid_abundance_file, output_class_file)
 

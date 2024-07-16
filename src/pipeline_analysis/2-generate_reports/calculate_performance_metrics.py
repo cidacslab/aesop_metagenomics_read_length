@@ -1,5 +1,5 @@
+from utils.utility_functions import get_files_in_folder
 import os, sys
-
 
 
 def load_accession_taxids(input_file):
@@ -31,7 +31,7 @@ def load_reported_tax_abundance(input_file):
       line_splits = line.strip().split(',')
       #taxid = line_splits[2]
       name = line_splits[3]
-      reads = int(line_splits[4])
+      reads = int(float(line_splits[4]))
       reported_taxid_abundance[name] = reads
   return reported_taxid_abundance
 
@@ -118,24 +118,15 @@ def calculate_confusion_matrix(accession_lineage_taxnames, lineage_taxname_class
 
 
 def main():
-  # #folder_path = sys.argv[1] if len(sys.argv) > 1 else ''
-  # input_extension = '_level_abundance.csv'
-  # # input_path = r"results/throat_mocks_reports"
-  # input_path = "results/new_mocks/kraken_results"
-  # output_path = "results/new_mocks/performance_metrics"
-  # metadata_path = "results/new_mocks/metadata_complete"
-  # # output_extension = "_75_reads_metrics.csv"
-  # output_extension = "_metrics.csv"
-  
-  input_metadata_path = sys.argv[1]
-  input_metrics_path = sys.argv[2]
-  output_path = sys.argv[3]
+  base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/results/mocks_throat_based"
   input_extension = '_level_abundance.csv'
-  # output_extension = "_75_reads_metrics.csv"
+  input_metadata_path = f"{base_path}/metadata"
+  input_metrics_path = f"{base_path}/perfomance_metrics"
+  
+  output_path = f"{base_path}/final_metrics"
   output_extension = "_metrics.csv"    
 
-  if not os.path.exists(output_path):
-    os.makedirs(output_path)
+  os.makedirs(output_path, exist_ok=True)
 
   print("Starting process...")
   all_files = get_files_in_folder(input_metrics_path, input_extension)
@@ -145,12 +136,11 @@ def main():
     print("")
     print(f"Analyzing file: {file}")
 
-    filename = os.path.basename(file).split(input_extension)[0]
+    filename = os.path.basename(file).replace(input_extension, "")
     
     splits = filename.split("_")
     meta_filename = "_".join(splits[0:-2])
-
-    metadata_file = os.path.join(input_metadata_path, meta_filename + "_metadata.csv")
+    metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
     accession_taxids = load_accession_taxids(metadata_file)
 
     accession_lineage_classified_file = os.path.join(input_metrics_path, filename + "_level_abundance.csv")
@@ -161,8 +151,6 @@ def main():
     
     output_file = os.path.join(output_path, filename + output_extension)
     calculate_confusion_matrix(accession_lineage_taxnames, lineage_taxname_classified, reported_tax_abundance, accession_taxids, output_file)
-  if not os.path.exists(output_path):
-    os.makedirs(output_path)
 
 
 if __name__ == '__main__':

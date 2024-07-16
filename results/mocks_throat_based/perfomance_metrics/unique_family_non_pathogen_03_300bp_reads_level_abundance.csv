@@ -1,0 +1,24 @@
+read_accession_id,read_accession_total_count,root,kraken_classified_root,superkingdom,kraken_classified_superkingdom,phylum,kraken_classified_phylum,class,kraken_classified_class,order,kraken_classified_order,family,kraken_classified_family,genus,kraken_classified_genus,species,kraken_classified_species
+NZ_CP046313.1,102621,root,102253,Bacteria,102253,Bacillota,102137,Bacilli,102111,Bacillales,102020,unclassified Bacillales family,0,Gemella,102012,Gemella sanguinis,101836
+NZ_CP024700.1,13163,root,13104,Bacteria,13103,Fusobacteriota,13091,Fusobacteriia,13091,Fusobacteriales,13091,Fusobacteriaceae,13091,Fusobacterium,13091,Fusobacterium pseudoperiodonticum,12464
+NZ_CP126745.1,3146,root,3136,Bacteria,3136,Actinomycetota,3136,Actinomycetes,3136,Propionibacteriales,3135,Propionibacteriaceae,3135,Cutibacterium,3135,Cutibacterium acnes,3124
+NZ_CP027235.1,116663,root,116262,Bacteria,116262,Pseudomonadota,116262,Gammaproteobacteria,116262,Pasteurellales,116259,Pasteurellaceae,116259,Haemophilus,116110,Haemophilus sp. oral taxon 036,113784
+NZ_CP020566.1,10913,root,10876,Bacteria,10876,Bacillota,10872,Negativicutes,10872,Veillonellales,10872,Veillonellaceae,10872,Veillonella,10872,Veillonella atypica,10858
+NZ_CP014239.1,33361,root,33228,Bacteria,33228,Bacillota,33228,Negativicutes,33228,Selenomonadales,33228,Selenomonadaceae,33228,Selenomonas,33228,Selenomonas sp. oral taxon 136,32744
+NZ_CP032621.1,17771,root,17705,Bacteria,17705,Bacillota,17642,Bacilli,17633,Lactobacillales,17622,Streptococcaceae,17535,Streptococcus,17535,Streptococcus gwangjuense,16795
+NZ_CP012544.1,26995,root,26901,Bacteria,26901,Campylobacterota,26901,Epsilonproteobacteria,26901,Campylobacterales,26901,Campylobacteraceae,26901,Campylobacter,26901,Campylobacter showae,26840
+NZ_AP019829.2,72583,root,72338,Bacteria,72338,Fusobacteriota,72338,Fusobacteriia,72338,Fusobacteriales,72338,Leptotrichiaceae,72324,Leptotrichia,72324,Leptotrichia wadei,71531
+NZ_CP027228.1,79931,root,79675,Bacteria,79675,Bacillota,79675,Clostridia,79599,Eubacteriales,0,Eubacteriales Family XIII. Incertae Sedis,0,Mogibacterium,79596,Mogibacterium diversum,79520
+NZ_CP019668.1,57599,root,57426,Bacteria,57426,Pseudomonadota,57426,Betaproteobacteria,57426,Burkholderiales,57426,Burkholderiaceae,57425,Burkholderia,57393,Burkholderia cenocepacia,42969
+NZ_CP083898.1,7995,root,7965,Bacteria,7965,Pseudomonadota,7965,Alphaproteobacteria,7963,Sphingomonadales,7963,Zymomonadaceae,7963,Zymomonas,7963,Zymomonas mobilis,7963
+NZ_CP072373.1,23254,root,23165,Bacteria,23165,Bacteroidota,23165,Bacteroidia,23165,Bacteroidales,23165,Prevotellaceae,23129,Prevotella,22916,Prevotella denticola,22429
+NZ_CP032364.1,13425,root,13384,Bacteria,13384,Bacillota,13380,Clostridia,13380,Eubacteriales,0,Lachnospiraceae,13380,Lachnoanaerobaculum,13380,Lachnoanaerobaculum umeaense,13379
+NZ_CP027232.1,7110,root,7084,Bacteria,7084,Bacteroidota,7084,Flavobacteriia,7084,Flavobacteriales,7084,Flavobacteriaceae,7084,Capnocytophaga,7084,Capnocytophaga sp. oral taxon 864,6422
+NZ_CP089305.1,92024,root,91670,Bacteria,91670,Bacillota,91670,Bacilli,91670,Lactobacillales,91669,Lactobacillaceae,91628,Limosilactobacillus,91078,Limosilactobacillus fermentum,90983
+NC_001422.1,72672,root,72418,Viruses,1058,Phixviricota,1058,Malgrandaviricetes,1058,Petitvirales,1058,Microviridae,1058,Sinsheimervirus,0,Sinsheimervirus phiX174,0
+NZ_CP050497.1,37054,root,36939,Bacteria,36939,Spirochaetota,36939,Spirochaetia,36939,Spirochaetales,36939,Treponemataceae,36939,Treponema,36939,Treponema vincentii,30743
+NZ_CP008849.1,138283,root,137849,Bacteria,137849,Pseudomonadota,137849,Gammaproteobacteria,137849,Alteromonadales,137846,Alteromonadaceae,137842,Alteromonas,137800,Alteromonas australica,127696
+NZ_CP031255.1,10756,root,10721,Bacteria,10721,Pseudomonadota,10721,Betaproteobacteria,10721,Neisseriales,10721,Neisseriaceae,10721,Neisseria,10714,Neisseria elongata,10679
+NZ_CP054018.1,13554,root,13502,Bacteria,13502,Actinomycetota,13491,Actinomycetes,13491,Micrococcales,13462,Micrococcaceae,13461,Rothia,13461,Rothia dentocariosa,13418
+NC_000866.4,19743,root,19673,Viruses,19673,Uroviricota,19673,Caudoviricetes,19673,unclassified Caudoviricetes order,0,Straboviridae,19654,Tequatrovirus,19650,Tequatrovirus T4,15460
+NC_002628.3,29384,root,29300,Archaea,2022,Euryarchaeota,2019,Methanobacteria,2011,Methanobacteriales,2011,Methanobacteriaceae,2011,Methanothermobacter,2007,Methanothermobacter wolfeii,896

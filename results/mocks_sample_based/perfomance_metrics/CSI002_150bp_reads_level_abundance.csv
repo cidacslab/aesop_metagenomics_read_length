@@ -1,0 +1,55 @@
+read_accession_id,read_accession_total_count,root,kraken_classified_root,superkingdom,kraken_classified_superkingdom,phylum,kraken_classified_phylum,class,kraken_classified_class,order,kraken_classified_order,family,kraken_classified_family,genus,kraken_classified_genus,species,kraken_classified_species
+CP097095.1,23,root,8,Bacteria,8,Actinomycetota,8,Actinomycetes,8,Actinomycetales,6,Actinomycetaceae,6,Actinomyces,1,Actinomyces graevenitzii,0
+NZ_LT635457.1,26,root,26,Bacteria,26,Actinomycetota,26,Actinomycetes,26,Actinomycetales,26,Actinomycetaceae,26,Actinomyces,26,Actinomyces pacaensis,26
+NZ_CP033459.1,3007,root,3007,Bacteria,3007,Bacteroidota,3007,Bacteroidia,3006,Bacteroidales,3006,Prevotellaceae,3006,Pseudoprevotella,3005,Pseudoprevotella muciniphila,3005
+CAKAFU010000002.1,4671,root,980,Bacteria,932,Bacteroidota,794,Bacteroidia,724,Bacteroidales,713,Prevotellaceae,561,Alloprevotella,0,Alloprevotella tannerae,0
+NZ_CP036550.1,3020,root,3020,Bacteria,3020,Bacteroidota,3020,Bacteroidia,3004,Bacteroidales,3004,Bacteroidaceae,2955,Bacteroides,2944,Bacteroides fragilis,2905
+NZ_CP049272.1,789,root,789,Bacteria,789,Campylobacterota,789,Epsilonproteobacteria,789,Campylobacterales,789,Campylobacteraceae,789,Campylobacter,789,Campylobacter concisus,786
+NZ_CP012544.1,71117,root,71117,Bacteria,71117,Campylobacterota,71115,Epsilonproteobacteria,71115,Campylobacterales,71115,Campylobacteraceae,71115,Campylobacter,71115,Campylobacter showae,70916
+NZ_CP022386.1,1988,root,1987,Bacteria,1987,Bacteroidota,1987,Flavobacteriia,1987,Flavobacteriales,1987,Flavobacteriaceae,1987,Capnocytophaga,1987,Capnocytophaga gingivalis,1980
+NZ_CP022384.1,36524,root,36517,Bacteria,36517,Bacteroidota,36517,Flavobacteriia,36508,Flavobacteriales,36508,Flavobacteriaceae,36490,Capnocytophaga,36490,Capnocytophaga leadbetteri,35374
+NZ_CP022379.1,122,root,122,Bacteria,122,Bacteroidota,122,Flavobacteriia,122,Flavobacteriales,122,Flavobacteriaceae,122,Capnocytophaga,122,Capnocytophaga sputigena,122
+NZ_CP073092.1,2488,root,2487,Bacteria,2487,Actinomycetota,2487,Actinomycetes,2487,Mycobacteriales,2469,Corynebacteriaceae,2469,Corynebacterium,2469,Corynebacterium tuberculostearicum,2422
+NZ_CP018196.1,76,root,76,Bacteria,76,Fusobacteriota,76,Fusobacteriia,76,Fusobacteriales,76,Fusobacteriaceae,76,Fusobacterium,76,Fusobacterium necrophorum,76
+NZ_CP028101.1,246,root,246,Bacteria,246,Fusobacteriota,246,Fusobacteriia,246,Fusobacteriales,246,Fusobacteriaceae,246,Fusobacterium,246,Fusobacterium nucleatum,222
+NZ_CP024703.1,91918,root,91896,Bacteria,91867,Fusobacteriota,91861,Fusobacteriia,91861,Fusobacteriales,91861,Fusobacteriaceae,91843,Fusobacterium,91843,Fusobacterium pseudoperiodonticum,89029
+NZ_CP031243.1,956,root,956,Bacteria,956,Pseudomonadota,956,Gammaproteobacteria,956,Pasteurellales,956,Pasteurellaceae,956,Haemophilus,953,Haemophilus haemolyticus,912
+NZ_AP018768.1,674,root,674,Bacteria,674,Pseudomonadota,674,Gammaproteobacteria,674,Pasteurellales,674,Pasteurellaceae,674,Haemophilus,672,Haemophilus influenzae,630
+NZ_CP083637.1,792,root,792,Bacteria,792,Bacillota,792,Bacilli,792,Bacillales,792,unclassified Bacillales family,0,Gemella,792,Gemella haemolysans,792
+NZ_CP038817.1,91254,root,91238,Bacteria,91238,Pseudomonadota,91238,Gammaproteobacteria,91221,Pasteurellales,91179,Pasteurellaceae,91179,Haemophilus,90994,Haemophilus parahaemolyticus,90715
+NZ_CP035368.2,180198,root,180139,Bacteria,180139,Pseudomonadota,180134,Gammaproteobacteria,180104,Pasteurellales,180072,Pasteurellaceae,180072,Haemophilus,179378,Haemophilus parainfluenzae,178359
+NC_001781.1,3,root,3,Viruses,3,Negarnaviricota,3,Monjiviricetes,3,Mononegavirales,3,Pneumoviridae,3,Orthopneumovirus,3,Orthopneumovirus hominis,3
+NC_013203.1,39,root,39,Bacteria,39,Actinomycetota,39,Coriobacteriia,39,Coriobacteriales,39,Atopobiaceae,39,Lancefieldella,39,Lancefieldella parvula,39
+NZ_LR134378.1,62,root,62,Bacteria,62,Pseudomonadota,62,Betaproteobacteria,62,Burkholderiales,62,Burkholderiaceae,62,Lautropia,62,Lautropia mirabilis,62
+NZ_CP101528.1,36,root,36,Bacteria,36,Actinomycetota,36,Actinomycetes,36,Micrococcales,36,Micrococcaceae,36,Micrococcus,36,Micrococcus luteus,27
+NZ_CP078113.1,720,root,720,Bacteria,720,Pseudomonadota,720,Betaproteobacteria,720,Neisseriales,720,Neisseriaceae,720,Neisseria,720,Neisseria gonorrhoeae,687
+NZ_CP030820.1,2179,root,2176,Bacteria,2176,Pseudomonadota,2176,Betaproteobacteria,2170,Neisseriales,2169,Neisseriaceae,2169,Neisseria,2166,Neisseria meningitidis,2038
+NZ_CP053939.1,12532,root,12529,Bacteria,12529,Pseudomonadota,12529,Betaproteobacteria,12529,Neisseriales,12529,Neisseriaceae,12528,Neisseria,12486,Neisseria mucosa,10922
+NZ_CP073114.1,194888,root,194851,Bacteria,194851,Pseudomonadota,194847,Betaproteobacteria,194823,Neisseriales,194817,Neisseriaceae,194809,Neisseria,194118,Neisseria subflava,175846
+NZ_CP072363.1,1065,root,1065,Bacteria,1065,Bacteroidota,1065,Bacteroidia,1065,Bacteroidales,1065,Prevotellaceae,1065,Prevotella,1065,Prevotella jejuni,1035
+AP018050.1,15003,root,15000,Bacteria,14996,Bacteroidota,14995,Bacteroidia,14972,Bacteroidales,14972,Prevotellaceae,14687,Prevotella,14687,Prevotella melaninogenica,14648
+NZ_CP024696.1,260,root,260,Bacteria,260,Bacteroidota,260,Bacteroidia,247,Bacteroidales,247,Prevotellaceae,246,Prevotella,246,Prevotella intermedia,241
+NZ_CP092048.1,447,root,447,Bacteria,447,Bacteroidota,447,Bacteroidia,447,Bacteroidales,447,Porphyromonadaceae,443,Porphyromonas,443,Porphyromonas gingivalis,443
+NC_019960.1,62,root,62,Bacteria,62,Bacteroidota,62,Bacteroidia,62,Bacteroidales,62,Prevotellaceae,61,Prevotella,61,Prevotella dentalis,61
+NZ_CP072390.1,23,root,23,Bacteria,23,Bacteroidota,23,Bacteroidia,23,Bacteroidales,23,Prevotellaceae,23,Prevotella,23,Prevotella scopos,23
+NZ_CP079201.1,43,root,43,Bacteria,43,Actinomycetota,43,Actinomycetes,43,Micrococcales,43,Micrococcaceae,43,Rothia,43,Rothia dentocariosa,43
+NZ_CP079822.1,110592,root,110584,Bacteria,110584,Actinomycetota,110584,Actinomycetes,110584,Micrococcales,110581,Micrococcaceae,110576,Rothia,110553,Rothia mucilaginosa,110521
+NZ_CP102197.1,42455,root,42453,Bacteria,42453,Actinomycetota,42453,Actinomycetes,42453,Actinomycetales,42395,Actinomycetaceae,42395,Schaalia,42374,Schaalia odontolytica,42315
+NZ_CP012646.1,99187,root,99177,Bacteria,99177,Bacillota,99175,Bacilli,99175,Lactobacillales,99165,Streptococcaceae,99105,Streptococcus,99098,Streptococcus mitis,90907
+NZ_CP102583.1,14129,root,14129,Bacteria,14127,Bacillota,14076,Bacilli,14076,Lactobacillales,14074,Streptococcaceae,14074,Streptococcus,14074,Streptococcus pneumoniae,13455
+NC_015875.1,8883,root,8883,Bacteria,8881,Bacillota,8794,Bacilli,8792,Lactobacillales,8789,Streptococcaceae,8779,Streptococcus,8777,Streptococcus pseudopneumoniae,7523
+NZ_CAKAHJ010000001.1,1371,root,1024,Bacteria,1020,Actinomycetota,999,Actinomycetes,998,Actinomycetales,930,Actinomycetaceae,930,Actinomyces,7,uncultured Actinomyces sp.,0
+NZ_CALGPY010000005.1,1617,root,1509,Bacteria,1505,Campylobacterota,1496,Epsilonproteobacteria,1496,Campylobacterales,1496,Campylobacteraceae,1496,Campylobacter,1496,uncultured Campylobacter sp.,0
+NZ_CP079193.1,36,root,36,Bacteria,36,Bacillota,36,Bacilli,36,Lactobacillales,36,Streptococcaceae,36,Streptococcus,36,Streptococcus suis,35
+NZ_CP009227.1,26,root,26,Bacteria,26,Spirochaetota,26,Spirochaetia,26,Spirochaetales,26,Treponemataceae,26,Treponema,26,Treponema sp. OMZ 838,16
+NZ_CAKOJV010000001.1,158,root,151,Bacteria,150,Fusobacteriota,149,Fusobacteriia,149,Fusobacteriales,149,Fusobacteriaceae,149,Fusobacterium,149,uncultured Fusobacterium sp.,0
+NZ_CABPWA010000001.1,39,root,7,Bacteria,4,Bacillota,1,Clostridia,0,Eubacteriales,0,Peptostreptococcaceae,0,Peptostreptococcus,0,uncultured Peptostreptococcus sp.,0
+NZ_UQJH01000001.1,62,root,10,Bacteria,9,Bacteroidota,3,Bacteroidia,0,Bacteroidales,0,Porphyromonadaceae,0,Porphyromonas,0,uncultured Porphyromonas sp.,0
+NZ_CAJTJS010000001.1,227,root,24,Bacteria,22,Bacteroidota,16,Bacteroidia,15,Bacteroidales,15,Prevotellaceae,5,Prevotella,2,uncultured Prevotella sp.,0
+NZ_CAKAIK010000001.1,237,root,236,Bacteria,236,Actinomycetota,236,Actinomycetes,236,Micrococcales,236,Micrococcaceae,236,Rothia,236,uncultured Rothia sp.,0
+NZ_CAMNMG010000001.1,615,root,567,Bacteria,565,Bacillota,562,Bacilli,561,Lactobacillales,559,Streptococcaceae,557,Streptococcus,556,uncultured Streptococcus sp.,0
+NZ_CALHUL010000006.1,187,root,164,Bacteria,164,Spirochaetota,163,Spirochaetia,163,Spirochaetales,163,Treponemataceae,163,Treponema,163,uncultured Treponema sp.,0
+NZ_CP020566.1,1193,root,1193,Bacteria,1193,Bacillota,1192,Negativicutes,1192,Veillonellales,1192,Veillonellaceae,1192,Veillonella,1192,Veillonella atypica,1187
+NZ_LR134375.1,1144,root,1144,Bacteria,1144,Bacillota,1144,Negativicutes,1144,Veillonellales,1144,Veillonellaceae,1144,Veillonella,1144,Veillonella dispar,1079
+NZ_AP022321.1,569,root,569,Bacteria,569,Bacillota,566,Negativicutes,564,Veillonellales,564,Veillonellaceae,564,Veillonella,564,Veillonella nakazawae,503
+NZ_CP019721.1,22,root,22,Bacteria,22,Bacillota,22,Negativicutes,22,Veillonellales,22,Veillonellaceae,22,Veillonella,22,Veillonella parvula,22
