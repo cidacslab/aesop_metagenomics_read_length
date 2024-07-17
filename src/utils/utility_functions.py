@@ -2,7 +2,6 @@ import os, csv
 
 
 def get_files_in_folder(input_path, input_extension):
-  print("Start process")
   files_fullpath = []
   for root, _, files in os.walk(input_path):
     for file_name in files:
