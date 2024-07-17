@@ -16,7 +16,7 @@ data_wrangling_heatmap_by_sample <- function(
 
     df_patho_taxon <- df_metrics
     if (load_pathogens) {
-        df_pathogens <- read_csv("data/czid_rpip_vsp_pathogens.csv")
+        df_pathogens <- read_csv("data/czid_rpip_vsp_pathogens_20240625.csv")
 
         df_patho_taxon <- df_patho_taxon %>%
             inner_join(df_pathogens, by = c("species_taxid" = "tax_id")) %>%

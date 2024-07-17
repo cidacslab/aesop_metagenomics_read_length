@@ -43,10 +43,9 @@ def load_accession_lineage_classified(input_file):
   lineage_taxname_counts = [{} for _ in range(9)]
   lineage_taxname_counts[0] = {"total_reads": 0}
   with open(input_file, 'r') as file:
+    if header:
+      next(file)
     for line in file:
-      if header:
-        header = False
-        continue
       line_splits = line.strip().split(',')
       accession_id = line_splits[0]
       accession_total_reads = int(line_splits[1])
@@ -121,7 +120,7 @@ def main():
   base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/results/mocks_throat_based"
   input_extension = '_level_abundance.csv'
   input_metadata_path = f"{base_path}/metadata"
-  input_metrics_path = f"{base_path}/perfomance_metrics"
+  input_metrics_path = f"{base_path}/performance_metrics"
   
   output_path = f"{base_path}/final_metrics"
   output_extension = "_metrics.csv"    

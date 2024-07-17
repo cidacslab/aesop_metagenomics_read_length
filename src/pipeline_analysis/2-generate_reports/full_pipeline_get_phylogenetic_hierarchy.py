@@ -116,10 +116,10 @@ def get_accession_taxid_by_level(input_file):
 def main():
   base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/results/mocks_throat_based"
   input_extension = '_R1.fastq'
-  input_fastq_path = f"{base_path}/mock_metagenomes"
+  input_fastq_path = f"{base_path}/pipeline_outputs/1-fastp_results"
   input_kraken_path = f"{base_path}/pipeline_outputs/2-kraken_results"
   input_metadata_path = f"{base_path}/metadata"
-  output_path = f"{base_path}/perfomance_metrics"
+  output_path = f"{base_path}/performance_metrics"
   
   os.makedirs(output_path, exist_ok=True)
 

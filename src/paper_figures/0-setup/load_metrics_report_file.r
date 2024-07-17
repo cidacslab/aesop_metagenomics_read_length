@@ -1,7 +1,7 @@
 require(readr)
 require(dplyr)
 
-load_metrics_report_file <- function(reports_folder_path) {
+# load_metrics_report_file <- function(reports_folder_path) {
 
   # get a list of all files in the folder
   reports_folder <- list.files(
@@ -43,7 +43,7 @@ load_metrics_report_file <- function(reports_folder_path) {
     base_filename <- paste0(name_split[1:(split_len - 1)], collapse = "_")
     base_filename2 <- paste0(name_split[1:(split_len - 2)], collapse = "_")
     base_filename2 <- strsplit(base_filename2, "0")[[1]][1]
-    reads_counter <- name_split[split_len]
+    reads_counter <-  strsplit(name_split[split_len], "bp")[[1]][1]
 
     # load the file into a data frame
     file_path <- file.path(reports_folder_path, file)
@@ -123,11 +123,12 @@ load_metrics_report_file <- function(reports_folder_path) {
     )
 
     # add the data frame to the list
-    df_list[[file]] <- df_clean
+    # df_list[[file]] <- df_clean
+    df_list[[file]] <- df
   }
 
   # bind the data frames together into a single data frame
   df_metrics <- bind_rows(df_list)
 
-  return(df_metrics)
-}
+#   return(df_metrics)
+# }
