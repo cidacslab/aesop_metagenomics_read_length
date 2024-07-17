@@ -5,29 +5,24 @@ import os, sys
 def load_accession_taxids(input_file):
   accession_taxids = {}
   with open(input_file, 'r') as file:
-    header = True
-    for line in file:
-      if header:
-        header = False
-        continue
-      
+    next(file)
+    for line in file:      
       line_splits = line.strip().split(',')
-      accession_id = line_splits[0]
-      genus_taxid = line_splits[-2]
-      species_taxid = line_splits[-1]
+      accession_id = line_splits[0].strip()
+      genus_taxid = line_splits[-2].strip()
+      species_taxid = line_splits[-1].strip()
+      if accession_id == "":
+        continue
       accession_taxids[accession_id] = (genus_taxid, species_taxid)
   return accession_taxids
 
 
 def load_reported_tax_abundance(input_file):
   print(f"Load total tax id reads file: {input_file}")
-  header = True
   reported_taxid_abundance = {}
   with open(input_file, 'r') as file:
+    next(file)
     for line in file:
-      if header:
-        header = False
-        continue
       line_splits = line.strip().split(',')
       #taxid = line_splits[2]
       name = line_splits[3]
@@ -38,13 +33,11 @@ def load_reported_tax_abundance(input_file):
 
 def load_accession_lineage_classified(input_file):
   print(f"Load accession level abundance file: {input_file}")
-  header = True
   accession_lineage_taxnames = {}
   lineage_taxname_counts = [{} for _ in range(9)]
   lineage_taxname_counts[0] = {"total_reads": 0}
   with open(input_file, 'r') as file:
-    if header:
-      next(file)
+    next(file)
     for line in file:
       line_splits = line.strip().split(',')
       accession_id = line_splits[0]
@@ -122,7 +115,7 @@ def main():
   input_metadata_path = f"{base_path}/metadata"
   input_metrics_path = f"{base_path}/performance_metrics"
   
-  output_path = f"{base_path}/final_metrics"
+  output_path = f"{base_path}/performance_metrics"
   output_extension = "_metrics.csv"    
 
   os.makedirs(output_path, exist_ok=True)

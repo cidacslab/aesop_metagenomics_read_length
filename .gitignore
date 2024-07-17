@@ -6,8 +6,8 @@
 *.fastq
 *.fastq.gz
 *.kout
-*.kreport
-*.bracken
+# *.kreport
+# *.bracken
 
 # Miscellaneous
 .DS_Store

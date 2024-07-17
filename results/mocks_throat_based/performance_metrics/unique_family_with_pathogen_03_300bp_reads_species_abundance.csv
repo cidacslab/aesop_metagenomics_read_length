@@ -1,6 +1,6 @@
 parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
-85025,1,1817,Nocardia,82693,82693
-1817,2,135487,Nocardia cyriacigeorgica,82399,82399
+85025,1,1817,Nocardia,82693,82981
+1817,2,135487,Nocardia cyriacigeorgica,82399,82686
 1817,2,1824,Nocardia asteroides,2,2
 1817,2,37332,Nocardia seriolae,1,1
 1817,1,2637762,unclassified Nocardia,1,1
@@ -28,9 +28,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2979332,1,2979334,unclassified Prescottella,2,2
 2979334,2,3064529,Prescottella sp. R16,2,2
 2979332,2,43767,Prescottella equi,1,1
-1762,1,1763,Mycobacterium,4229,4229
-1763,1,2993898,Mycobacterium ulcerans group,4210,4210
-2993898,2,1781,Mycobacterium marinum,3030,3030
+1762,1,1763,Mycobacterium,4229,4243
+1763,1,2993898,Mycobacterium ulcerans group,4210,4224
+2993898,2,1781,Mycobacterium marinum,3030,3040
 2993898,2,1809,Mycobacterium ulcerans,78,78
 2993898,2,133549,Mycobacterium shottsii,20,20
 2993898,2,265949,Mycobacterium pseudoshottsii,18,18
@@ -49,15 +49,15 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 85026,1,2053,Gordonia,6,6
 2053,2,410332,Gordonia malaquae,3,3
 2053,2,2831662,Gordonia pseudamarae,3,3
-2049,1,1654,Actinomyces,38006,38006
-1654,2,1655,Actinomyces naeslundii,36173,36173
-1654,1,2609248,unclassified Actinomyces,813,813
-2609248,2,706438,Actinomyces sp. oral taxon 171,511,511
+2049,1,1654,Actinomyces,38006,38138
+1654,2,1655,Actinomyces naeslundii,36173,36299
+1654,1,2609248,unclassified Actinomyces,813,815
+2609248,2,706438,Actinomyces sp. oral taxon 171,511,512
 2609248,2,2789425,Actinomyces sp. HMT 175,184,184
 2609248,2,712116,Actinomyces sp. oral taxon 169,107,107
 2609248,2,712122,Actinomyces sp. oral taxon 414,5,5
 2609248,2,2079536,Actinomyces sp. Z16,1,1
-1654,2,544580,Actinomyces oris,597,597
+1654,2,544580,Actinomyces oris,597,599
 1654,2,1656,Actinomyces viscosus,165,165
 1654,2,461393,Actinomyces massiliensis,119,119
 1654,2,2737173,Actinomyces marmotae,11,11
@@ -73,8 +73,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2529408,2,1660,Schaalia odontolytica,16,16
 2049,1,1069494,Trueperella,1,1
 1069494,2,445930,Trueperella abortisuis,1,1
-1268,1,32207,Rothia,30023,30023
-32207,2,2047,Rothia dentocariosa,29935,29935
+1268,1,32207,Rothia,30023,30127
+32207,2,2047,Rothia dentocariosa,29935,30039
 32207,2,172042,Rothia aeria,8,8
 32207,2,43675,Rothia mucilaginosa,2,2
 32207,1,2689056,unclassified Rothia (in: high G+C Gram-positive bacteria),1,1
@@ -117,8 +117,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 57495,2,1274,Dermacoccus nishinomiyaensis,1,1
 1042322,1,577469,Demequina,1,1
 577469,2,1930058,Demequina sediminis,1,1
-31957,1,1912216,Cutibacterium,25737,25737
-1912216,2,1747,Cutibacterium acnes,25654,25654
+31957,1,1912216,Cutibacterium,25737,25826
+1912216,2,1747,Cutibacterium acnes,25654,25743
 1912216,2,33010,Cutibacterium avidum,2,2
 31957,1,2801844,Arachnia,11,11
 2801844,2,1750,Arachnia propionica,11,11
@@ -172,8 +172,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2614687,2,3144104,Microbispora sp. ZYX-F-249,1,1
 31953,1,1678,Bifidobacterium,1,1
 1678,2,216816,Bifidobacterium longum,1,1
-1300,1,1301,Streptococcus,33407,33407
-1301,2,1433513,Streptococcus gwangjuense,31993,31993
+1300,1,1301,Streptococcus,33407,33523
+1301,2,1433513,Streptococcus gwangjuense,31993,32104
 1301,2,28037,Streptococcus mitis,106,106
 1301,2,1313,Streptococcus pneumoniae,101,101
 1301,1,2608887,unclassified Streptococcus,98,98
@@ -243,8 +243,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1357,2,1358,Lactococcus lactis,1,1
 1357,1,2643510,unclassified Lactococcus,1,1
 2643510,2,2816912,Lactococcus sp. LG606,1,1
-33958,1,2742598,Limosilactobacillus,15397,15397
-2742598,2,1613,Limosilactobacillus fermentum,15382,15382
+33958,1,2742598,Limosilactobacillus,15397,15450
+2742598,2,1613,Limosilactobacillus fermentum,15382,15435
 2742598,2,1598,Limosilactobacillus reuteri,2,2
 2742598,2,97478,Limosilactobacillus mucosae,2,2
 33958,1,2767842,Lactiplantibacillus,7,7
@@ -285,8 +285,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 29393,2,29394,Dolosigranulum pigrum,9,9
 186828,1,2747,Carnobacterium,2,2
 2747,2,2751,Carnobacterium maltaromaticum,2,2
-539738,1,1378,Gemella,1196,1196
-1378,2,84135,Gemella sanguinis,1194,1194
+539738,1,1378,Gemella,1196,1200
+1378,2,84135,Gemella sanguinis,1194,1198
 1378,2,29391,Gemella morbillorum,1,1
 90964,1,1279,Staphylococcus,46,46
 1279,2,29382,Staphylococcus cohnii,25,25
@@ -326,29 +326,29 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1637,2,1638,Listeria ivanovii,1,1
 186824,1,1677050,Novibacillus,1,1
 1677050,2,1471761,Novibacillus thermophilus,1,1
-1843491,1,970,Selenomonas,25044,25044
-970,1,2637378,unclassified Selenomonas,25041,25041
-2637378,2,713030,Selenomonas sp. oral taxon 136,24685,24685
+1843491,1,970,Selenomonas,25044,25131
+970,1,2637378,unclassified Selenomonas,25041,25128
+2637378,2,713030,Selenomonas sp. oral taxon 136,24685,24771
 2637378,2,712538,Selenomonas sp. oral taxon 478,16,16
 2637378,2,1884263,Selenomonas sp. oral taxon 920,4,4
 2637378,2,712528,Selenomonas sp. oral taxon 126,2,2
 1843490,1,2375,Sporomusa,4,4
 2375,1,307248,environmental samples,4,4
 307248,2,307249,uncultured Sporomusa sp.,4,4
-31977,1,29465,Veillonella,8471,8471
-29465,2,39777,Veillonella atypica,8459,8459
+31977,1,29465,Veillonella,8471,8500
+29465,2,39777,Veillonella atypica,8459,8488
 29465,2,29466,Veillonella parvula,2,2
 29465,2,248315,Veillonella rodentium,2,2
 29465,2,423477,Veillonella rogosae,1,1
 29465,1,2630086,unclassified Veillonella,1,1
 2630086,2,2682455,Veillonella sp. S12025-13,1,1
-186803,1,1164882,Lachnoanaerobaculum,21490,21490
-1164882,2,617123,Lachnoanaerobaculum umeaense,21487,21487
+186803,1,1164882,Lachnoanaerobaculum,21490,21565
+1164882,2,617123,Lachnoanaerobaculum umeaense,21487,21562
 1164882,2,2490855,Lachnoanaerobaculum gingivalis,1,1
 186803,1,1506553,Lachnoclostridium,1,1
 1506553,2,29347,[Clostridium] scindens,1,1
-3030910,1,86331,Mogibacterium,4599,4599
-86331,2,114527,Mogibacterium diversum,4598,4598
+3030910,1,86331,Mogibacterium,4599,4615
+86331,2,114527,Mogibacterium diversum,4598,4614
 186804,1,1870884,Clostridioides,1,1
 1870884,2,1496,Clostridioides difficile,1,1
 3118657,1,390805,Geosporobacter,1,1
@@ -374,18 +374,18 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2919614,2,214888,Williamsoniiplasma luminosum,1,1
 3139177,1,3139173,Candidatus Chlorohelix,1,1
 3139173,2,3003348,Candidatus Chlorohelix allophototropha,1,1
-119060,1,32008,Burkholderia,96136,96136
-32008,1,87882,Burkholderia cepacia complex,95312,95312
-87882,2,95486,Burkholderia cenocepacia,71910,71910
-87882,2,292,Burkholderia cepacia,938,938
-87882,2,60550,Burkholderia pyrrocinia,674,674
-87882,2,179879,Burkholderia anthina,604,604
-87882,2,488447,Burkholderia contaminans,592,592
-87882,2,87883,Burkholderia multivorans,422,422
-87882,2,2978683,Burkholderia orbicola,412,412
-87882,2,152480,Burkholderia ambifaria,349,349
-87882,2,101571,Burkholderia ubonensis,314,314
-87882,2,482957,Burkholderia lata,299,299
+119060,1,32008,Burkholderia,96136,96471
+32008,1,87882,Burkholderia cepacia complex,95312,95644
+87882,2,95486,Burkholderia cenocepacia,71910,72161
+87882,2,292,Burkholderia cepacia,938,941
+87882,2,60550,Burkholderia pyrrocinia,674,676
+87882,2,179879,Burkholderia anthina,604,606
+87882,2,488447,Burkholderia contaminans,592,594
+87882,2,87883,Burkholderia multivorans,422,423
+87882,2,2978683,Burkholderia orbicola,412,413
+87882,2,152480,Burkholderia ambifaria,349,350
+87882,2,101571,Burkholderia ubonensis,314,315
+87882,2,482957,Burkholderia lata,299,300
 87882,2,488730,Burkholderia arboris,267,267
 87882,2,95485,Burkholderia stabilis,237,237
 87882,2,488731,Burkholderia seminalis,237,237
@@ -456,8 +456,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1980697,2,1852381,Duodenibacillus massiliensis,1,1
 224471,1,114248,Tepidimonas,1,1
 114248,2,307486,Tepidimonas taiwanensis,1,1
-481,1,482,Neisseria,13530,13530
-482,2,495,Neisseria elongata,13464,13464
+481,1,482,Neisseria,13530,13577
+482,2,495,Neisseria elongata,13464,13511
 482,2,490,Neisseria sicca,6,6
 482,2,28449,Neisseria subflava,5,5
 482,1,2623750,unclassified Neisseria,4,4
@@ -477,22 +477,22 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1499392,1,535,Chromobacterium,2,2
 535,1,2641838,unclassified Chromobacterium,2,2
 2641838,2,2953890,Chromobacterium sp. IIBBL 290-4,2,2
-33988,1,780,Rickettsia,67781,67781
-780,1,114277,spotted fever group,67768,67768
-114277,2,783,Rickettsia rickettsii,47727,47727
-114277,2,781,Rickettsia conorii,1481,1481
-114277,2,33991,Rickettsia montanensis,708,708
-114277,2,786,Rickettsia akari,689,689
-114277,2,33989,Rickettsia amblyommatis,659,659
-114277,2,787,Rickettsia australis,571,571
-114277,2,35791,Rickettsia massiliae,538,538
-114277,2,35792,Rickettsia parkeri,505,505
-114277,2,33992,Rickettsia rhipicephali,432,432
-114277,2,1068590,Rickettsia asembonensis,380,380
-114277,2,1105106,Rickettsia philipii,350,350
-114277,2,35788,Rickettsia africae,344,344
-114277,2,47589,Rickettsia peacockii,330,330
-114277,2,2761623,Rickettsia tillamookensis,322,322
+33988,1,780,Rickettsia,67781,68017
+780,1,114277,spotted fever group,67768,68004
+114277,2,783,Rickettsia rickettsii,47727,47893
+114277,2,781,Rickettsia conorii,1481,1486
+114277,2,33991,Rickettsia montanensis,708,710
+114277,2,786,Rickettsia akari,689,691
+114277,2,33989,Rickettsia amblyommatis,659,661
+114277,2,787,Rickettsia australis,571,572
+114277,2,35791,Rickettsia massiliae,538,539
+114277,2,35792,Rickettsia parkeri,505,506
+114277,2,33992,Rickettsia rhipicephali,432,433
+114277,2,1068590,Rickettsia asembonensis,380,381
+114277,2,1105106,Rickettsia philipii,350,351
+114277,2,35788,Rickettsia africae,344,345
+114277,2,47589,Rickettsia peacockii,330,331
+114277,2,2761623,Rickettsia tillamookensis,322,323
 114277,1,266068,Rickettsia sibirica subgroup,232,232
 266068,2,35793,Rickettsia sibirica,232,232
 114277,2,35789,Rickettsia helvetica,191,191
@@ -505,8 +505,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 114277,2,334545,Rickettsia tamurae,4,4
 780,1,114295,unclassified Rickettsia,2,2
 114295,2,2884482,Rickettsia endosymbiont of Ceutorhynchus assimilis,2,2
-2844881,1,541,Zymomonas,8052,8052
-541,2,542,Zymomonas mobilis,8052,8052
+2844881,1,541,Zymomonas,8052,8080
+541,2,542,Zymomonas mobilis,8052,8080
 2800788,1,1041,Erythrobacter,2,2
 1041,1,2633097,unclassified Erythrobacter,2,2
 2633097,2,1922225,Erythrobacter sp. Alg231-14,2,2
@@ -540,9 +540,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 3058346,2,3024400,Gimibacter soli,1,1
 433,1,434,Acetobacter,1,1
 434,2,1076596,Acetobacter persici,1,1
-712,1,724,Haemophilus,21230,21230
-724,1,2609962,unclassified Haemophilus,20826,20826
-2609962,2,712310,Haemophilus sp. oral taxon 036,20826,20826
+712,1,724,Haemophilus,21230,21304
+724,1,2609962,unclassified Haemophilus,20826,20898
+2609962,2,712310,Haemophilus sp. oral taxon 036,20826,20898
 724,2,726,Haemophilus haemolyticus,55,55
 724,2,727,Haemophilus influenzae,54,54
 724,2,729,Haemophilus parainfluenzae,17,17
@@ -555,8 +555,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2685287,2,2911526,Avibacterium sp. 20-132,1,1
 712,1,476528,Bibersteinia,1,1
 476528,2,47735,Bibersteinia trehalosi,1,1
-2903219,1,226,Alteromonas,19488,19488
-226,2,589873,Alteromonas australica,18080,18080
+2903219,1,226,Alteromonas,19488,19556
+226,2,589873,Alteromonas australica,18080,18143
 226,1,2614992,unclassified Alteromonas,74,74
 2614992,2,2785913,Alteromonas sp. B31-7,56,56
 2614992,2,1714845,Alteromonas sp. BL110,4,4
@@ -614,8 +614,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 742031,1,180541,Salinisphaera,1,1
 180541,1,2649847,unclassified Salinisphaera,1,1
 2649847,2,2183911,Salinisphaera sp. LB1,1,1
-72294,1,194,Campylobacter,96237,96237
-194,2,204,Campylobacter showae,96032,96032
+72294,1,194,Campylobacter,96237,96572
+194,2,204,Campylobacter showae,96032,96367
 194,2,199,Campylobacter concisus,5,5
 194,2,76517,Campylobacter hominis,3,3
 194,2,203,Campylobacter rectus,2,2
@@ -632,8 +632,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 28196,2,1054033,Arcobacter venerupis,4,4
 72293,1,209,Helicobacter,3,3
 209,2,210,Helicobacter pylori,3,3
-171552,1,838,Prevotella,26243,26243
-838,2,28129,Prevotella denticola,25725,25725
+171552,1,838,Prevotella,26243,26334
+838,2,28129,Prevotella denticola,25725,25814
 838,2,28132,Prevotella melaninogenica,27,27
 838,2,28131,Prevotella intermedia,21,21
 838,2,1177574,Prevotella jejuni,11,11
@@ -658,9 +658,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 815,1,816,Bacteroides,2,2
 816,1,139043,environmental samples,2,2
 139043,2,162156,uncultured Bacteroides sp.,2,2
-49546,1,1016,Capnocytophaga,12419,12419
-1016,1,2640652,unclassified Capnocytophaga,11610,11610
-2640652,2,1316593,Capnocytophaga sp. oral taxon 864,11317,11317
+49546,1,1016,Capnocytophaga,12419,12462
+1016,1,2640652,unclassified Capnocytophaga,11610,11650
+2640652,2,1316593,Capnocytophaga sp. oral taxon 864,11317,11356
 2640652,2,2748316,Capnocytophaga sp. oral taxon 902,24,24
 2640652,2,1705617,Capnocytophaga sp. oral taxon 323,22,22
 2640652,2,1316596,Capnocytophaga sp. oral taxon 878,5,5
@@ -690,8 +690,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 423349,2,398053,Mucilaginibacter ginsenosidivorans,1,1
 1937961,1,2349,Haliscomenobacter,1,1
 2349,2,2350,Haliscomenobacter hydrossis,1,1
-1129771,1,32067,Leptotrichia,23362,23362
-32067,2,157687,Leptotrichia wadei,23122,23122
+1129771,1,32067,Leptotrichia,23362,23443
+32067,2,157687,Leptotrichia wadei,23122,23202
 32067,1,2633022,unclassified Leptotrichia,70,70
 2633022,2,712361,Leptotrichia sp. oral taxon 218,23,23
 2633022,2,712368,Leptotrichia sp. oral taxon 498,19,19
@@ -703,8 +703,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 32067,2,157688,Leptotrichia hofstadii,12,12
 32067,2,40542,Leptotrichia buccalis,11,11
 32067,2,109328,Leptotrichia trevisanii,10,10
-203492,1,848,Fusobacterium,14782,14782
-848,2,2663009,Fusobacterium pseudoperiodonticum,14093,14093
+203492,1,848,Fusobacterium,14782,14833
+848,2,2663009,Fusobacterium pseudoperiodonticum,14093,14142
 848,2,76859,Fusobacterium animalis,61,61
 848,2,76857,Fusobacterium polymorphum,43,43
 848,2,860,Fusobacterium periodonticum,36,36
@@ -716,9 +716,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 848,2,850,Fusobacterium mortiferum,3,3
 848,2,856,Fusobacterium varium,1,1
 848,2,2764326,Fusobacterium hominis,1,1
-2845253,1,157,Treponema,21729,21729
-157,2,69710,Treponema vincentii,18090,18090
-157,1,2638727,unclassified Treponema,392,392
+2845253,1,157,Treponema,21729,21804
+157,2,69710,Treponema vincentii,18090,18153
+157,1,2638727,unclassified Treponema,392,393
 2638727,2,1659192,Treponema sp. OMZ 305,183,183
 2638727,2,1643513,Treponema sp. OMZ 857,25,25
 2638727,2,1643512,Treponema sp. OMZ 855,21,21
@@ -934,16 +934,16 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 145260,2,145263,Methanothermobacter marburgensis,2,2
 3064797,1,1070314,Halorussus,4,4
 1070314,2,2650975,Halorussus halophilus,4,4
-11617,1,1653394,Mammarenavirus,154684,154684
-1653394,2,3052307,Mammarenavirus guanaritoense,154684,154684
-2560076,1,186938,Respirovirus,752,752
-186938,2,3049952,Respirovirus laryngotracheitidis,752,752
-2946630,1,12059,Enterovirus,52647,52647
-12059,2,138951,Enterovirus D,52647,52647
+11617,1,1653394,Mammarenavirus,154684,155224
+1653394,2,3052307,Mammarenavirus guanaritoense,154684,155224
+2560076,1,186938,Respirovirus,752,754
+186938,2,3049952,Respirovirus laryngotracheitidis,752,754
+2946630,1,12059,Enterovirus,52647,52830
+12059,2,138951,Enterovirus D,52647,52830
 1914297,1,12163,Carlavirus,1,1
 12163,2,666859,Butterbur mosaic virus,1,1
-1198136,1,10663,Tequatrovirus,55535,55535
-10663,2,10665,Tequatrovirus T4,43599,43599
+1198136,1,10663,Tequatrovirus,55535,55728
+10663,2,10665,Tequatrovirus T4,43599,43751
 10663,2,2846204,Tequatrovirus shfml26,207,207
 10663,2,2846680,Tequatrovirus pyps2t,120,120
 10663,2,2844192,Tequatrovirus effone,94,94

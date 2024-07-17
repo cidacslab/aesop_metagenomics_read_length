@@ -1,6 +1,6 @@
 parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
-31977,1,29465,Veillonella,75345,75345
-29465,2,39777,Veillonella atypica,75069,75069
+31977,1,29465,Veillonella,75345,75346
+29465,2,39777,Veillonella atypica,75069,75070
 29465,2,29466,Veillonella parvula,11,11
 29465,2,423477,Veillonella rogosae,4,4
 29465,2,248315,Veillonella rodentium,2,2
@@ -152,8 +152,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 202949,2,161154,Thermanaeromonas toyohensis,1,1
 1570339,1,31983,Helcococcus,1,1
 31983,2,40091,Helcococcus kunzii,1,1
-31957,1,1912216,Cutibacterium,56276,56276
-1912216,2,1747,Cutibacterium acnes,55910,55910
+31957,1,1912216,Cutibacterium,56276,56277
+1912216,2,1747,Cutibacterium acnes,55910,55911
 1912216,2,33010,Cutibacterium avidum,2,2
 85015,1,1839,Nocardioides,2,2
 1839,2,2483798,Nocardioides pantholopis,2,2
@@ -261,8 +261,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1005038,2,1005039,Fimbriimonas ginsengisoli,3,3
 332247,1,332248,Truepera,1,1
 332248,2,332249,Truepera radiovictrix,1,1
-2903219,1,226,Alteromonas,112051,112051
-226,2,589873,Alteromonas australica,89824,89824
+2903219,1,226,Alteromonas,112051,112053
+226,2,589873,Alteromonas australica,89824,89826
 226,1,2614992,unclassified Alteromonas,413,413
 2614992,2,2785913,Alteromonas sp. B31-7,342,342
 2614992,2,2267264,Alteromonas sp. RKMC-009,12,12
@@ -482,8 +482,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 3058346,2,3024400,Gimibacter soli,1,1
 510685,1,510690,Sneathiella,1,1
 510690,2,2950108,Sneathiella marina,1,1
-72294,1,194,Campylobacter,85838,85838
-194,2,204,Campylobacter showae,85567,85567
+72294,1,194,Campylobacter,85838,85839
+194,2,204,Campylobacter showae,85567,85568
 194,2,203,Campylobacter rectus,3,3
 194,1,2593542,unclassified Campylobacter,2,2
 2593542,2,2517362,Campylobacter sp. CCUG 57310,2,2
@@ -961,7 +961,7 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 5721,2,5722,Trichomonas vaginalis,6,6
 265316,1,45156,Cyanidioschyzon,1,1
 45156,2,45157,Cyanidioschyzon merolae,1,1
-1198136,1,10663,Tequatrovirus,52903,52903
+1198136,1,10663,Tequatrovirus,52903,52904
 10663,2,10665,Tequatrovirus T4,32740,32740
 10663,2,2846204,Tequatrovirus shfml26,112,112
 10663,2,2844229,Tequatrovirus pp01,90,90

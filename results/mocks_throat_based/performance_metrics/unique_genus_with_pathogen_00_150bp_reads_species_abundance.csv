@@ -1,6 +1,6 @@
 parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
-1268,1,32207,Rothia,276324,276324
-32207,2,2047,Rothia dentocariosa,275133,275133
+1268,1,32207,Rothia,276324,276338
+32207,2,2047,Rothia dentocariosa,275133,275147
 32207,2,172042,Rothia aeria,22,22
 32207,2,43675,Rothia mucilaginosa,2,2
 32207,2,37923,Rothia kristinae,1,1
@@ -149,8 +149,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1643826,1,84111,Eggerthella,1568,1568
 84111,2,84112,Eggerthella lenta,1556,1556
 84111,2,2690837,Eggerthella guodeyinii,1,1
-33958,1,2742598,Limosilactobacillus,23166,23166
-2742598,2,1613,Limosilactobacillus fermentum,23102,23102
+33958,1,2742598,Limosilactobacillus,23166,23167
+2742598,2,1613,Limosilactobacillus fermentum,23102,23103
 2742598,2,97478,Limosilactobacillus mucosae,1,1
 33958,1,2759736,Lacticaseibacillus,11355,11355
 2759736,2,47715,Lacticaseibacillus rhamnosus,11249,11249
@@ -395,12 +395,12 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1569,2,1571,Sporosarcina ureae,1603,1603
 186821,1,2077,Sporolactobacillus,1,1
 2077,2,269673,Sporolactobacillus terrae,1,1
-186804,1,1870884,Clostridioides,52967,52967
-1870884,2,1496,Clostridioides difficile,52960,52960
+186804,1,1870884,Clostridioides,52967,52969
+1870884,2,1496,Clostridioides difficile,52960,52962
 1870884,1,2635829,unclassified Clostridioides,2,2
 2635829,2,2770772,Clostridioides sp. ES-S-0107-01,2,2
-186804,1,1849822,Paraclostridium,33776,33776
-1849822,2,1505,Paraclostridium sordellii,33585,33585
+186804,1,1849822,Paraclostridium,33776,33777
+1849822,2,1505,Paraclostridium sordellii,33585,33586
 1849822,2,1490,Paraclostridium bifermentans,4,4
 186804,1,2743582,Peptacetobacter,4518,4518
 2743582,2,89152,Peptacetobacter hiranonis,4518,4518
@@ -558,8 +558,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2092,1,2093,Mycoplasma,7,7
 2093,1,656088,Mycoplasma mycoides group,7,7
 656088,2,2102,Mycoplasma mycoides,7,7
-2005473,1,2518495,Duncaniella,19421,19421
-2518495,1,2649562,unclassified Duncaniella,19359,19359
+2005473,1,2518495,Duncaniella,19421,19422
+2518495,1,2649562,unclassified Duncaniella,19359,19360
 2649562,2,2576606,Duncaniella sp. B8,325,325
 2649562,2,2530392,Duncaniella sp. C9,38,38
 2005473,1,1918540,Muribaculum,6537,6537

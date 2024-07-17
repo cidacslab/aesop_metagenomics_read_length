@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, shutil
 import utils.kraken_report_parser as KrakenParser
 from utils.utility_functions import get_files_in_folder
 from metagenome_creation.define_samples_composition.create_composition_from_fastq import count_reads_by_sequence_id
@@ -90,17 +90,14 @@ def get_accession_taxid_by_level(input_file):
   accession_taxid_by_level = {}
 
   with open(input_file, 'r') as file:
-    header = True
+    next(file)
     for line in file:
-      if header:
-        header = False
-        continue
-
       line_splits = line.strip().split(',')
-      accession_id = line_splits[0]
+      accession_id = line_splits[0].strip()
       lineage = line_splits[3:10]
       taxids = line_splits[10:]
-
+      if accession_id == "":
+        continue
       if accession_id in accession_taxid_by_level:
         print(f"Duplicated accession id {accession_id}")
         continue
@@ -115,12 +112,13 @@ def get_accession_taxid_by_level(input_file):
 
 def main():
   base_path = "/home/work/aesop/github/aesop_metagenomics_read_length/results/mocks_throat_based"
-  input_extension = '_R1.fastq'
-  input_fastq_path = f"{base_path}/pipeline_outputs/1-fastp_results"
+  input_extension = '_1.fastq'
+  input_fastq_path = f"{base_path}/pipeline_outputs/1-fastp_output"
   input_kraken_path = f"{base_path}/pipeline_outputs/2-kraken_results"
   input_metadata_path = f"{base_path}/metadata"
   output_path = f"{base_path}/performance_metrics"
   
+  shutil.rmtree(output_path)
   os.makedirs(output_path, exist_ok=True)
 
   all_files = get_files_in_folder(input_fastq_path, input_extension)

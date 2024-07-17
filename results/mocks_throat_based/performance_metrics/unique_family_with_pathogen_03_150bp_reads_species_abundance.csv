@@ -1,6 +1,6 @@
 parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
-85025,1,1817,Nocardia,82924,82924
-1817,2,135487,Nocardia cyriacigeorgica,82541,82541
+85025,1,1817,Nocardia,82924,82926
+1817,2,135487,Nocardia cyriacigeorgica,82541,82543
 1817,1,2637762,unclassified Nocardia,2,2
 2637762,2,2975990,Nocardia sp. NBC_00403,1,1
 1817,2,2749991,Nocardia gipuzkoensis,1,1
@@ -32,8 +32,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1716,2,134034,Corynebacterium freneyi,1,1
 85026,1,2053,Gordonia,1,1
 2053,2,2831662,Gordonia pseudamarae,1,1
-2049,1,1654,Actinomyces,37882,37882
-1654,2,1655,Actinomyces naeslundii,35868,35868
+2049,1,1654,Actinomyces,37882,37883
+1654,2,1655,Actinomyces naeslundii,35868,35869
 1654,1,2609248,unclassified Actinomyces,805,805
 2609248,2,706438,Actinomyces sp. oral taxon 171,473,473
 2609248,2,2789425,Actinomyces sp. HMT 175,177,177
@@ -61,8 +61,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2529408,2,1660,Schaalia odontolytica,12,12
 2049,1,1069494,Trueperella,1,1
 1069494,2,445930,Trueperella abortisuis,1,1
-1268,1,32207,Rothia,30130,30130
-32207,2,2047,Rothia dentocariosa,29976,29976
+1268,1,32207,Rothia,30130,30131
+32207,2,2047,Rothia dentocariosa,29976,29977
 32207,2,172042,Rothia aeria,4,4
 1268,1,1663,Arthrobacter,1,1
 1663,2,2486855,Arthrobacter sulfonylureivorans,1,1
@@ -117,8 +117,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2995702,2,235986,Actinacidiphila glaucinigra,1,1
 2070,1,1847,Pseudonocardia,2,2
 1847,2,240495,Pseudonocardia dioxanivorans,2,2
-1300,1,1301,Streptococcus,33439,33439
-1301,2,1433513,Streptococcus gwangjuense,30655,30655
+1300,1,1301,Streptococcus,33439,33440
+1301,2,1433513,Streptococcus gwangjuense,30655,30656
 1301,2,1313,Streptococcus pneumoniae,120,120
 1301,2,28037,Streptococcus mitis,119,119
 1301,2,1303,Streptococcus oralis,63,63
@@ -216,9 +216,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 86331,2,114527,Mogibacterium diversum,4592,4592
 1570339,1,31983,Helcococcus,1,1
 31983,2,40091,Helcococcus kunzii,1,1
-119060,1,32008,Burkholderia,96372,96372
-32008,1,87882,Burkholderia cepacia complex,93381,93381
-87882,2,95486,Burkholderia cenocepacia,60711,60711
+119060,1,32008,Burkholderia,96372,96375
+32008,1,87882,Burkholderia cepacia complex,93381,93384
+87882,2,95486,Burkholderia cenocepacia,60711,60713
 87882,2,292,Burkholderia cepacia,549,549
 87882,2,60550,Burkholderia pyrrocinia,378,378
 87882,2,488447,Burkholderia contaminans,365,365
@@ -291,9 +291,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 1499392,1,535,Chromobacterium,2,2
 535,1,2641838,unclassified Chromobacterium,2,2
 2641838,2,2953890,Chromobacterium sp. IIBBL 290-4,2,2
-33988,1,780,Rickettsia,68042,68042
-780,1,114277,spotted fever group,67996,67996
-114277,2,783,Rickettsia rickettsii,35573,35573
+33988,1,780,Rickettsia,68042,68044
+780,1,114277,spotted fever group,67996,67998
+114277,2,783,Rickettsia rickettsii,35573,35574
 114277,2,781,Rickettsia conorii,1113,1113
 114277,2,33989,Rickettsia amblyommatis,593,593
 114277,2,786,Rickettsia akari,483,483
@@ -381,8 +381,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 469,2,280145,Acinetobacter colistiniresistens,1,1
 2066474,1,305899,Endozoicomonas,1,1
 305899,2,1027273,Endozoicomonas montiporae,1,1
-72294,1,194,Campylobacter,96542,96542
-194,2,204,Campylobacter showae,96244,96244
+72294,1,194,Campylobacter,96542,96545
+194,2,204,Campylobacter showae,96244,96247
 194,2,199,Campylobacter concisus,5,5
 194,2,203,Campylobacter rectus,5,5
 194,2,197,Campylobacter jejuni,2,2
@@ -555,14 +555,14 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2184,2,39152,Methanococcus maripaludis,1,1
 3064797,1,1070314,Halorussus,2,2
 1070314,2,2650975,Halorussus halophilus,2,2
-11617,1,1653394,Mammarenavirus,155268,155268
-1653394,2,3052307,Mammarenavirus guanaritoense,155268,155268
+11617,1,1653394,Mammarenavirus,155268,155273
+1653394,2,3052307,Mammarenavirus guanaritoense,155268,155273
 2560076,1,186938,Respirovirus,754,754
 186938,2,3049952,Respirovirus laryngotracheitidis,754,754
-2946630,1,12059,Enterovirus,52817,52817
-12059,2,138951,Enterovirus D,52817,52817
-1198136,1,10663,Tequatrovirus,55229,55229
-10663,2,10665,Tequatrovirus T4,34311,34311
+2946630,1,12059,Enterovirus,52817,52818
+12059,2,138951,Enterovirus D,52817,52818
+1198136,1,10663,Tequatrovirus,55229,55230
+10663,2,10665,Tequatrovirus T4,34311,34312
 10663,2,2846204,Tequatrovirus shfml26,131,131
 10663,2,2844229,Tequatrovirus pp01,85,85
 10663,2,2846680,Tequatrovirus pyps2t,76,76

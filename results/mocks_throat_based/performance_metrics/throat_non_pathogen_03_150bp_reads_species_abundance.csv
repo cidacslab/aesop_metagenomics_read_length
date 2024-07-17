@@ -1,10 +1,10 @@
 parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
-3030910,1,86331,Mogibacterium,135935,135935
-86331,2,114527,Mogibacterium diversum,135549,135549
+3030910,1,86331,Mogibacterium,135935,135940
+86331,2,114527,Mogibacterium diversum,135549,135554
 86331,2,86332,Mogibacterium pumilum,22,22
 86331,2,114528,Mogibacterium neglectum,12,12
-186803,1,1164882,Lachnoanaerobaculum,70588,70588
-1164882,2,617123,Lachnoanaerobaculum umeaense,70483,70483
+186803,1,1164882,Lachnoanaerobaculum,70588,70590
+1164882,2,617123,Lachnoanaerobaculum umeaense,70483,70485
 1164882,2,2490855,Lachnoanaerobaculum gingivalis,8,8
 31979,1,1485,Clostridium,5,5
 1485,2,1561,Clostridium baratii,1,1
@@ -20,13 +20,13 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 202949,2,161154,Thermanaeromonas toyohensis,2,2
 3039168,1,44260,Moorella,1,1
 44260,2,676965,Moorella humiferrea,1,1
-1843491,1,970,Selenomonas,36044,36044
-970,1,2637378,unclassified Selenomonas,36025,36025
-2637378,2,713030,Selenomonas sp. oral taxon 136,34282,34282
+1843491,1,970,Selenomonas,36044,36045
+970,1,2637378,unclassified Selenomonas,36025,36026
+2637378,2,713030,Selenomonas sp. oral taxon 136,34282,34283
 2637378,2,712538,Selenomonas sp. oral taxon 478,28,28
 2637378,2,1884263,Selenomonas sp. oral taxon 920,3,3
-31977,1,29465,Veillonella,29546,29546
-29465,2,39777,Veillonella atypica,29447,29447
+31977,1,29465,Veillonella,29546,29547
+29465,2,39777,Veillonella atypica,29447,29448
 29465,2,29466,Veillonella parvula,3,3
 29465,2,423477,Veillonella rogosae,1,1
 909930,1,33024,Phascolarctobacterium,1,1
@@ -175,8 +175,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 128827,1,118747,Bulleidia,1,1
 118747,1,2704656,unclassified Bulleidia,1,1
 2704656,2,2806552,Bulleidia sp. zg-1006,1,1
-31957,1,1912216,Cutibacterium,56523,56523
-1912216,2,1747,Cutibacterium acnes,56150,56150
+31957,1,1912216,Cutibacterium,56523,56525
+1912216,2,1747,Cutibacterium acnes,56150,56152
 1912216,2,33010,Cutibacterium avidum,3,3
 85015,1,1839,Nocardioides,2,2
 1839,2,2483798,Nocardioides pantholopis,2,2
@@ -267,8 +267,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2767358,2,142650,Mycoplasmopsis phocirhinis,2,2
 1663426,1,1005038,Fimbriimonas,1,1
 1005038,2,1005039,Fimbriimonas ginsengisoli,1,1
-1129771,1,32067,Leptotrichia,66475,66475
-32067,2,157687,Leptotrichia wadei,64454,64454
+1129771,1,32067,Leptotrichia,66475,66477
+32067,2,157687,Leptotrichia wadei,64454,64456
 32067,1,2633022,unclassified Leptotrichia,407,407
 2633022,2,712368,Leptotrichia sp. oral taxon 498,111,111
 2633022,2,1785996,Leptotrichia sp. oral taxon 847,85,85
@@ -281,8 +281,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 32067,2,554406,Leptotrichia hongkongensis,82,82
 32067,2,40542,Leptotrichia buccalis,79,79
 32067,2,157688,Leptotrichia hofstadii,71,71
-203492,1,848,Fusobacterium,31494,31494
-848,2,2663009,Fusobacterium pseudoperiodonticum,28346,28346
+203492,1,848,Fusobacterium,31494,31495
+848,2,2663009,Fusobacterium pseudoperiodonticum,28346,28347
 848,2,76857,Fusobacterium polymorphum,158,158
 848,2,76859,Fusobacterium animalis,129,129
 848,2,860,Fusobacterium periodonticum,122,122
@@ -441,8 +441,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 507,2,511,Alcaligenes faecalis,1,1
 75682,1,846,Oxalobacter,1,1
 846,2,933080,Oxalobacter vibrioformis,1,1
-2844881,1,541,Zymomonas,26105,26105
-541,2,542,Zymomonas mobilis,26105,26105
+2844881,1,541,Zymomonas,26105,26106
+541,2,542,Zymomonas mobilis,26105,26106
 41297,1,13687,Sphingomonas,2,2
 13687,2,3012344,Sphingomonas abietis,2,2
 335929,1,2800681,Aurantiacibacter,1,1
@@ -483,9 +483,9 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 2829815,1,204447,Skermanella,1,1
 255474,1,2038635,Hyphococcus,1,1
 2038635,2,1866326,Hyphococcus flavus,1,1
-49546,1,1016,Capnocytophaga,57297,57297
-1016,1,2640652,unclassified Capnocytophaga,47549,47549
-2640652,2,1316593,Capnocytophaga sp. oral taxon 864,44872,44872
+49546,1,1016,Capnocytophaga,57297,57299
+1016,1,2640652,unclassified Capnocytophaga,47549,47550
+2640652,2,1316593,Capnocytophaga sp. oral taxon 864,44872,44873
 2640652,2,1705617,Capnocytophaga sp. oral taxon 323,150,150
 2640652,2,2748316,Capnocytophaga sp. oral taxon 902,138,138
 2640652,2,1316596,Capnocytophaga sp. oral taxon 878,20,20
@@ -886,8 +886,8 @@ parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM
 5658,1,37616,Viannia,1,1
 37616,1,38579,Leishmania guyanensis species complex,1,1
 38579,2,5679,Leishmania panamensis,1,1
-1198136,1,10663,Tequatrovirus,117991,117991
-10663,2,10665,Tequatrovirus T4,73369,73369
+1198136,1,10663,Tequatrovirus,117991,117995
+10663,2,10665,Tequatrovirus T4,73369,73371
 10663,2,2846204,Tequatrovirus shfml26,239,239
 10663,2,2844229,Tequatrovirus pp01,177,177
 10663,2,2846680,Tequatrovirus pyps2t,177,177
