@@ -1,12 +1,12 @@
-import os, sys, shutil
+import os, sys, shutil, csv
 import utils.kraken_report_parser as KrakenParser
 from utils.utility_functions import get_files_in_folder
 from metagenome_creation.define_samples_composition.create_composition_from_fastq import count_reads_by_sequence_id
 
 
-def count_abundance_by_species(accession_taxid_counts, accession_abundance, tree_by_taxid, output_file):
+def count_abundance_by_species(accession_taxid_counts, tree_by_taxid, output_file):
   print(f"Count abundance by species, output file: {output_file}")
-  output_content = "parent_taxid,level,taxid,name,kraken_classifed_reads,NT_rPM\n"
+  output_content = "parent_taxid,level,taxid,name,kraken_classifed_reads\n"
 
   KrakenParser.clear_abundance_from_tree(tree_by_taxid)
   for taxid_counts in accession_taxid_counts.values():
@@ -16,7 +16,6 @@ def count_abundance_by_species(accession_taxid_counts, accession_abundance, tree
         continue
       tree_by_taxid[taxid].set_abundance(count)
 
-  total_reads = float(sum([accession_abundance[accession].count for accession in accession_abundance]))
   for taxid, node in tree_by_taxid.items():
     if node.level == "S" or node.level_enum == KrakenParser.Level.G:
       level = node.level_enum - KrakenParser.Level.G + 1
@@ -30,10 +29,10 @@ def count_abundance_by_species(accession_taxid_counts, accession_abundance, tree
 def count_abundance_by_accession_reads(accession_taxid_counts, accession_abundance, accession_taxid, tree_by_taxid, output_file):
   print(f"Count abundance by level, output file: {output_file}")
       
-  output_content = "read_accession_id,read_accession_total_count,root,abundance_root"
-  output_content += ",superkingdom,abundance_superkingdom,kingdom,abundance_kingdom"
-  output_content += ",phylum,abundance_phylum,class,abundance_class,order,abundance_order"
-  output_content += ",family,abundance_family,genus,abundance_genus,species,abundance_species\n"
+  output_content = "read_accession_id,read_accession_taxid,read_accession_total_count,root,root_taxid,abundance_root"
+  output_content += ",superkingdom,superkingdom_taxid,abundance_superkingdom,kingdom,kingdom_taxid,abundance_kingdom"
+  output_content += ",phylum,phylum_taxid,abundance_phylum,class,class_taxid,abundance_class,order,order_taxid,abundance_order"
+  output_content += ",family,family_taxid,abundance_family,genus,genus_taxid,abundance_genus,species,species_taxid,abundance_species\n"
 
   for accession_id, taxid_counts in accession_taxid_counts.items():
     KrakenParser.clear_abundance_from_tree(tree_by_taxid)
@@ -43,28 +42,31 @@ def count_abundance_by_accession_reads(accession_taxid_counts, accession_abundan
         continue
       tree_by_taxid[taxid].set_abundance(count)
 
-    abundance_by_level = [[None, 0] for _ in range(10)]
+    abundance_by_level = [["", 0, 0] for _ in range(10)]
     # fill abundance level 0 as total accession reads abundance
     abundance_by_level[0][0] = accession_id
-    abundance_by_level[0][1] = accession_abundance[accession_id].count
+    abundance_by_level[0][1] = accession_taxid[accession_id]
+    abundance_by_level[0][2] = accession_abundance[accession_id].count
     # start at accession species tax id and fill each level of taxonomic rank classification
     tax_id = accession_taxid[accession_id]
-    node = tree_by_taxid[tax_id]
+    node = tree_by_taxid.get(tax_id, None)
     while node is not None:
       if len(node.level) == 1:
         level = node.level_enum
         abundance_by_level[level][0] = node.name
-        abundance_by_level[level][1] = node.acumulated_abundance
+        abundance_by_level[level][1] = node.taxid
+        abundance_by_level[level][2] = node.acumulated_abundance
       node = node.parent
     # get abundance from species and go up the taxonomic hierarchy filling missing ranks
-    last_abundance = abundance_by_level[1][1]
-    for level in range(2, 10):
-      if abundance_by_level[level][0] is None:
-        abundance_by_level[level][0] = "None"
-        abundance_by_level[level][1] = last_abundance
-      last_abundance = abundance_by_level[level][1]    
+    # last_abundance = abundance_by_level[1][2]
+    # for level in range(2, 10):
+    #   if abundance_by_level[level][0] is None:
+    #     abundance_by_level[level][0] = ""
+    #     abundance_by_level[level][1] = 0
+    #     abundance_by_level[level][2] = last_abundance
+    #   last_abundance = abundance_by_level[level][1]
 
-    output_content += ",".join([f"{a[0]},{a[1]}" for a in abundance_by_level])
+    output_content += ",".join([f"{a[0]},{a[1]},{a[2]}" for a in abundance_by_level])
     output_content += "\n"
                     
   with open(output_file, "w") as file:
@@ -100,20 +102,20 @@ def get_accession_taxid_abundance(kout_file, output_file):
   return accession_taxid_counts
 
 
-def get_accession_taxid_abundance(out_file):
-  print(f"Get accession taxid abundance from: {out_file}")
-  accession_taxid_counts = {}
-  with open(out_file, "r") as file:
-    csv_reader = csv.reader(file)
-    next(csv_reader)
-    for row in csv_reader:
-      accession_id = row[0].strip()
-      taxid = row[1].strip()
-      count = int(row[2].strip())        
-      if accession_id not in accession_taxid_counts:
-        accession_taxid_counts[accession_id] = {}
-      accession_taxid_counts[accession_id][taxid] = count
-  return accession_taxid_counts
+# def get_accession_taxid_abundance(out_file):
+#   print(f"Get accession taxid abundance from: {out_file}")
+#   accession_taxid_counts = {}
+#   with open(out_file, "r") as file:
+#     csv_reader = csv.reader(file)
+#     next(csv_reader)
+#     for row in csv_reader:
+#       accession_id = row[0].strip()
+#       taxid = row[1].strip()
+#       count = int(row[2].strip())        
+#       if accession_id not in accession_taxid_counts:
+#         accession_taxid_counts[accession_id] = {}
+#       accession_taxid_counts[accession_id][taxid] = count
+#   return accession_taxid_counts
 
 
 def get_accession_taxid(input_file):
@@ -134,9 +136,9 @@ def get_accession_taxid(input_file):
 
 def main():
   base_path = "results/mocks_throat_based"
-  input_extension = '_1.fastq'
-  input_fastq_path = f"{base_path}/mock_metagenomes"
-  # input_fastq_path = f"{base_path}/pipeline_outputs/1-fastp_output"
+  input_extension = "_1.fastq"
+  # input_fastq_path = f"{base_path}/mock_metagenomes"
+  input_fastq_path = f"{base_path}/pipeline_outputs/1-fastp_output"
   input_kraken_path = f"{base_path}/pipeline_outputs/2-kraken_results"
   input_metadata_path = f"{base_path}/metadata_new"
   output_path = f"{base_path}/performance_metrics"
@@ -162,16 +164,16 @@ def main():
   metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
   accession_taxid = get_accession_taxid(metadata_file)
 
-  # accession_taxid_abundance_file = os.path.join(input_kraken_path, filename + ".kout")
+  accession_taxid_abundance_file = os.path.join(input_kraken_path, filename + ".kout")
   output_class_file = os.path.join(output_path, filename + "_out.csv")
-  # accession_taxid_counts = get_accession_taxid_abundance(accession_taxid_abundance_file, output_class_file)
-  accession_taxid_counts = get_accession_taxid_abundance(output_class_file)
+  accession_taxid_counts = get_accession_taxid_abundance(accession_taxid_abundance_file, output_class_file)
+  # accession_taxid_counts = get_accession_taxid_abundance(output_class_file)
 
   abundance_by_level_file = os.path.join(output_path, filename + "_level_abundance.csv")
   count_abundance_by_accession_reads(accession_taxid_counts, accession_abundance, accession_taxid, tree_by_taxid, abundance_by_level_file)
 
   abundance_by_species_file = os.path.join(output_path, filename + "_species_abundance.csv")
-  count_abundance_by_species(accession_taxid_counts, accession_abundance, tree_by_taxid, abundance_by_species_file)
+  count_abundance_by_species(accession_taxid_counts, tree_by_taxid, abundance_by_species_file)
 
   #output_file = os.path.join(output_path, filename + "_tree_out.csv")
   #write_output_file(read_counts, output_file)

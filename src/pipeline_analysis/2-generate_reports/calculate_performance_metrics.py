@@ -33,29 +33,30 @@ def load_reported_tax_abundance(input_file):
 
 def load_accession_lineage_classified(input_file):
   print(f"Load accession level abundance file: {input_file}")
-  accession_lineage_taxnames = {}
-  lineage_taxname_counts = [{} for _ in range(9)]
-  lineage_taxname_counts[0] = {"total_reads": 0}
+  accession_lineage_taxa = {}
+  lineage_taxa_counts = [{} for _ in range(9)]
+  lineage_taxa_counts[0] = {"total_reads": 0}
   with open(input_file, 'r') as file:
     next(file)
     for line in file:
       line_splits = line.strip().split(',')
       accession_id = line_splits[0]
       accession_total_reads = int(line_splits[1])
-      accession_lineage_taxnames[accession_id] = []
-      lineage_taxname_counts[0][accession_id] = accession_total_reads
-      lineage_taxname_counts[0]["total_reads"] += accession_total_reads
+      accession_lineage_taxa[accession_id] = []
+      lineage_taxa_counts[0][accession_id] = accession_total_reads
+      lineage_taxa_counts[0]["total_reads"] += accession_total_reads
       index = 1
-      for i in range(2, 17, 2):
+      for i in range(2, 30, 3):
         taxname = line_splits[i]
+        taxid = int(line_splits[i+1])
         mapped_reads = int(line_splits[i+1])
-        accession_lineage_taxnames[accession_id].append(taxname)
-        if taxname not in lineage_taxname_counts[index]:
-          lineage_taxname_counts[index][taxname] = {"total_reads": 0, "correct_mapped": 0}
-        lineage_taxname_counts[index][taxname]["total_reads"] += accession_total_reads
-        lineage_taxname_counts[index][taxname]["correct_mapped"] += mapped_reads
+        accession_lineage_taxa[accession_id].append(taxid)
+        if taxid not in lineage_taxa_counts[index]:
+          lineage_taxa_counts[index][taxid] = {"tax_name": taxname, "total_reads": 0, "correct_mapped": 0}
+        lineage_taxa_counts[index][taxid]["total_reads"] += accession_total_reads
+        lineage_taxa_counts[index][taxid]["correct_mapped"] += mapped_reads
         index += 1
-  return (accession_lineage_taxnames, lineage_taxname_counts)
+  return (accession_lineage_taxa, lineage_taxa_counts)
 
 
 def get_confusion_matrix_values(sample_total_reads, total_tax_reads, total_mapped_to_tax, correct_tax_reads):
@@ -75,38 +76,40 @@ def get_confusion_matrix_values(sample_total_reads, total_tax_reads, total_mappe
   return (true_positive, true_negative, false_positive, false_negative)
 
 
-def calculate_confusion_matrix(accession_lineage_taxnames, lineage_taxname_classified, reported_tax_abundance, accession_taxids, output_file):
+def calculate_confusion_matrix(accession_lineage_taxa, lineage_taxa_classified, reported_tax_abundance, output_file):
   print(f"Calculating confusion matrix: {output_file}")
       
   output_content = "accession_id,total_reads,genus,genus_taxid,genus_true_positive,genus_true_negative,"
   output_content += "genus_false_positive,genus_false_negative,species,species_taxid,species_true_positive,"
   output_content += "species_true_negative,species_false_positive,species_false_negative\n"
   
-  sample_total_reads = lineage_taxname_classified[0]["total_reads"]
+  sample_total_reads = lineage_taxa_classified[0]["total_reads"]
 
-  for accession_id, lineage_taxnames in accession_lineage_taxnames.items():
-    accession_total_reads = lineage_taxname_classified[0][accession_id]
+  for accession_id, lineage_taxa in accession_lineage_taxa.items():
+    accession_total_reads = lineage_taxa_classified[0][accession_id]
 
-    species_name  = lineage_taxnames[-1]
-    species_total_reads = lineage_taxname_classified[-1][species_name]["total_reads"]
-    species_correct_reads = lineage_taxname_classified[-1][species_name]["correct_mapped"]
-    species_total_classified = reported_tax_abundance.get(species_name, 0)
+    species_taxid= lineage_taxa[-1]
+    species_name = lineage_taxa_classified[-1][species_taxid]["tax_name"]
+    species_total_reads = lineage_taxa_classified[-1][species_taxid]["total_reads"]
+    species_correct_reads = lineage_taxa_classified[-1][species_taxid]["correct_mapped"]
+    species_total_classified = reported_tax_abundance.get(species_taxid, 0)
     
-    genus_name  = lineage_taxnames[-2]
-    genus_total_reads = lineage_taxname_classified[-2][genus_name]["total_reads"]
-    genus_correct_reads = lineage_taxname_classified[-2][genus_name]["correct_mapped"]
-    genus_total_classified = reported_tax_abundance.get(genus_name, 0)
+    genus_taxid = lineage_taxa[-2]
+    genus_name = lineage_taxa_classified[-1][genus_taxid]["tax_name"]
+    genus_total_reads = lineage_taxa_classified[-2][genus_taxid]["total_reads"]
+    genus_correct_reads = lineage_taxa_classified[-2][genus_taxid]["correct_mapped"]
+    genus_total_classified = reported_tax_abundance.get(genus_taxid, 0)
 
     genus_metrics = get_confusion_matrix_values(sample_total_reads, genus_total_reads, genus_total_classified, genus_correct_reads)
     species_metrics = get_confusion_matrix_values(sample_total_reads, species_total_reads, species_total_classified, species_correct_reads)
-    taxids = accession_taxids[accession_id]
 
-    output_content += f"{accession_id},{accession_total_reads},{genus_name},{taxids[0]},{genus_metrics[0]},"
-    output_content += f"{genus_metrics[1]},{genus_metrics[2]},{genus_metrics[3]},{species_name},{taxids[1]},"
+    output_content += f"{accession_id},{accession_total_reads},{genus_name},{genus_taxid},{genus_metrics[0]},"
+    output_content += f"{genus_metrics[1]},{genus_metrics[2]},{genus_metrics[3]},{species_name},{species_taxid},"
     output_content += f"{species_metrics[0]},{species_metrics[1]},{species_metrics[2]},{species_metrics[3]}\n"
       
   with open(output_file, "w") as out_file:
     out_file.write(output_content)
+
 
 
 def main():
@@ -133,16 +136,16 @@ def main():
     splits = filename.split("_")
     meta_filename = "_".join(splits[0:-2])
     metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
-    accession_taxids = load_accession_taxids(metadata_file)
+    # accession_taxids = load_accession_taxids(metadata_file)
 
     accession_lineage_classified_file = os.path.join(input_metrics_path, filename + "_level_abundance.csv")
-    accession_lineage_taxnames, lineage_taxname_classified = load_accession_lineage_classified(accession_lineage_classified_file)
+    accession_lineage_taxa, lineage_taxa_classified = load_accession_lineage_classified(accession_lineage_classified_file)
     
     reported_tax_abundance_file =  os.path.join(input_metrics_path, filename + "_species_abundance.csv")
     reported_tax_abundance = load_reported_tax_abundance(reported_tax_abundance_file)
     
     output_file = os.path.join(output_path, filename + output_extension)
-    calculate_confusion_matrix(accession_lineage_taxnames, lineage_taxname_classified, reported_tax_abundance, accession_taxids, output_file)
+    calculate_confusion_matrix(accession_lineage_taxa, lineage_taxa_classified, reported_tax_abundance, output_file)
 
 
 if __name__ == '__main__':
