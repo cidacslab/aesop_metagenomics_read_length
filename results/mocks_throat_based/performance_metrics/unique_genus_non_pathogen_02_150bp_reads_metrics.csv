@@ -1,0 +1,25 @@
+accession_id,total_reads,genus,genus_taxid,genus_true_positive,genus_true_negative,genus_false_positive,genus_false_negative,species,species_taxid,species_true_positive,species_true_negative,species_false_positive,species_false_negative
+NZ_AP019829.2,3894,Leptotrichia,32067,3886,996080,3,8,Leptotrichia wadei,157687,3774,996083,0,120
+NZ_CP050497.1,7851,Treponema,157,7851,992126,0,0,Treponema vincentii,69710,5681,992126,0,2170
+NZ_CP019668.1,25655,Burkholderia,32008,25627,974322,0,28,Burkholderia cenocepacia,95486,16083,974322,0,9572
+NZ_CP027232.1,36762,Capnocytophaga,1016,36762,963215,0,0,Capnocytophaga sp. oral taxon 864,1316593,28924,963215,0,7838
+NZ_CP027235.1,2941,Haemophilus,724,2933,997035,1,8,Haemophilus sp. oral taxon 036,712310,2781,997036,0,160
+NZ_CP032621.1,10889,Streptococcus,1301,10784,989073,15,105,Streptococcus gwangjuense,1433513,9854,989088,0,1035
+NZ_CP083898.1,12540,Zymomonas,541,12535,987437,0,5,Zymomonas mobilis,542,12535,987437,0,5
+NZ_CP008849.1,112135,Alteromonas,226,112050,887841,1,85,Alteromonas australica,589873,89824,887842,0,22311
+NZ_CP089305.1,7988,Limosilactobacillus,2742598,7861,991988,1,127,Limosilactobacillus fermentum,1613,7839,991989,0,149
+NZ_CP126745.1,56355,Cutibacterium,1912216,56274,943620,2,81,Cutibacterium acnes,1747,55910,943622,0,445
+NC_002628.3,356905,Psimunavirus,186914,6423,643072,0,350482,Methanothermobacter phage psiM100,173824,6241,643072,0,350664
+NZ_CP031255.1,34386,Neisseria,482,34305,965586,5,81,Neisseria elongata,495,33984,965591,0,402
+NZ_CP027228.1,9081,Mogibacterium,86331,9058,990896,0,23,Mogibacterium diversum,114527,9029,990896,0,52
+NZ_CP054018.1,36976,Rothia,32207,36831,963001,0,145,Rothia dentocariosa,2047,36663,963001,0,313
+NC_000866.4,53422,Tequatrovirus,10663,52903,946555,0,519,Tequatrovirus T4,10665,32740,946555,0,20682
+NZ_CP072373.1,8710,Prevotella,838,8589,991254,13,121,Prevotella denticola,28129,8329,991267,0,381
+NZ_CP013195.1,4948,Hoylesella,2974257,4751,995028,1,197,Hoylesella enoeca,76123,4750,995029,0,198
+NZ_CP014239.1,26447,Selenomonas,970,26447,973529,1,0,Selenomonas sp. oral taxon 136,713030,25147,973530,0,1300
+NZ_CP012544.1,85838,Campylobacter,194,85838,914139,0,0,Campylobacter showae,204,85567,914139,0,271
+NZ_CP020566.1,75388,Veillonella,29465,75341,924585,4,47,Veillonella atypica,39777,75068,924588,1,320
+NZ_CP024700.1,6505,Fusobacterium,848,6495,993464,8,10,Fusobacterium pseudoperiodonticum,2663009,5819,993472,0,686
+NZ_CP032364.1,8638,Lachnoanaerobaculum,1164882,8633,991339,0,5,Lachnoanaerobaculum umeaense,617123,8613,991339,0,25
+NZ_CP046313.1,6706,Gemella,1378,6677,993271,0,29,Gemella sanguinis,84135,6649,993271,0,57
+NC_001422.1,9017,Sinsheimervirus,1910954,0,990960,0,9017,Sinsheimervirus phiX174,10847,0,990960,0,9017

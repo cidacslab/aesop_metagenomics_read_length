@@ -1,0 +1,25 @@
+accession_id,total_reads,genus,genus_taxid,genus_true_positive,genus_true_negative,genus_false_positive,genus_false_negative,species,species_taxid,species_true_positive,species_true_negative,species_false_positive,species_false_negative
+NZ_CP039712.1,14360,Vagococcus,2737,14352,982113,7,8,Vagococcus zengguangii,2571750,14332,982120,0,28
+NZ_CP017038.2,43152,Tannerella,195950,43151,953328,0,1,Tannerella serpentiformis,712710,43151,953328,0,1
+NZ_CP098491.1,33891,Bacillus,1386,33778,962583,6,113,Bacillus subtilis,1423,5923,962589,0,27968
+NZ_CP068103.1,143794,Peptoniphilus,162289,137716,852686,0,6078,Peptoniphilus harei,54005,137619,852686,0,6175
+NZ_CP036259.1,27393,Sporomusa,2375,27393,969087,0,0,Sporomusa termitida,2377,27393,969087,0,0
+NC_012756.1,6377,Undefined genus in Caudoviricetes,2731619,6377,990103,0,0,Streptococcus phage PH10,644007,6377,990103,0,0
+NZ_CP046313.1,26988,Gemella,1378,26928,969491,1,60,Gemella sanguinis,84135,26884,969492,0,104
+NZ_CP066560.1,62249,Histophilus,214906,60261,934231,0,1988,Histophilus somni,731,60261,934231,0,1988
+NZ_CP117966.1,11074,Roseburia,841,10710,985406,0,364,Roseburia hominis,301301,10681,985406,0,393
+NZ_CP072246.1,42592,Phocaeicola,909656,38072,953879,9,4520,Phocaeicola dorei,357276,36614,953885,3,5978
+NZ_CP017761.1,15146,Marinilactibacillus,191769,15019,981334,0,127,Marinilactibacillus sp. 15R,1911586,15019,981334,0,127
+NZ_CP008852.1,9306,Pelosinus,365348,9306,987174,0,0,Pelosinus sp. UFO1,484770,9306,987174,0,0
+NZ_CP019668.1,10321,Burkholderia,32008,10311,986159,0,10,Burkholderia cenocepacia,95486,7683,986159,0,2638
+NZ_CP066811.1,1429,Peptacetobacter,2743582,1423,995051,0,6,Peptacetobacter hiranonis,89152,1423,995051,0,6
+NZ_CP033459.1,18277,Pseudoprevotella,2884814,18266,978203,0,11,Pseudoprevotella muciniphila,2133944,18266,978203,0,11
+NZ_CP116810.1,6619,Rhodopseudomonas,1073,6619,989861,0,0,Rhodopseudomonas palustris,1076,6617,989861,0,2
+NZ_CP050497.1,85558,Treponema,157,85558,910921,1,0,Treponema vincentii,69710,71343,910922,0,14215
+NZ_CP027228.1,1854,Mogibacterium,86331,1850,994626,0,4,Mogibacterium diversum,114527,1849,994626,0,5
+NZ_AP019735.1,35380,Alistipes,239759,34641,961084,16,739,Alistipes communis,2585118,34608,961099,1,772
+NZ_CP027286.1,124617,Clostridium,1485,124616,871853,10,1,Clostridium chauvoei,46867,124069,871863,0,548
+NZ_CP085178.1,24389,Pediococcus,1253,24375,972089,2,14,Pediococcus pentosaceus,1255,24359,972090,1,30
+NZ_CP118095.1,224452,Aerococcus,1375,221570,772001,27,2882,Aerococcus christensenii,87541,221561,772016,12,2891
+NZ_CP029033.1,10982,Actinobaculum,76833,10982,985498,0,0,Actinobaculum sp. 313,2495645,10982,985498,0,0
+NZ_CP012672.1,16280,Sorangium,39643,16277,980200,0,3,Sorangium cellulosum,56,4613,980200,0,11667

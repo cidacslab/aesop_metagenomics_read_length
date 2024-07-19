@@ -1,0 +1,54 @@
+accession_id,total_reads,genus,genus_taxid,genus_true_positive,genus_true_negative,genus_false_positive,genus_false_negative,species,species_taxid,species_true_positive,species_true_negative,species_false_positive,species_false_negative
+NZ_LT635457.1,30,Actinomyces,1654,43,992128,2139,2046,Actinomyces pacaensis,1852377,30,995778,548,0
+NZ_CP033459.1,3035,Pseudoprevotella,2884814,3034,993321,0,1,Pseudoprevotella muciniphila,2133944,3034,993321,0,1
+CAKAFU010000002.1,31,Alloprevotella,1283313,0,996325,0,31,Alloprevotella tannerae,76122,0,996325,0,31
+NZ_CP036550.1,5430,Bacteroides,816,5302,990908,18,128,Bacteroides fragilis,817,5264,990925,1,166
+NZ_CP049272.1,123,Campylobacter,194,2858,993497,0,1,Campylobacter concisus,199,123,996232,1,0
+NZ_CP012544.1,2716,Campylobacter,194,2858,993497,0,1,Campylobacter showae,204,2709,993636,4,7
+NZ_CP022386.1,729,Capnocytophaga,1016,12120,984231,0,5,Capnocytophaga gingivalis,1017,729,995625,2,0
+NZ_CP022384.1,403,Capnocytophaga,1016,12120,984231,0,5,Capnocytophaga leadbetteri,327575,396,995952,1,7
+NZ_CP022379.1,10993,Capnocytophaga,1016,12120,984231,0,5,Capnocytophaga sputigena,1019,10937,985363,0,56
+ACIL03000013.1,30,Catonella,43996,0,996326,0,30,Catonella morbi,43997,0,996326,0,30
+NZ_CP028101.1,113,Fusobacterium,848,51356,944994,0,6,Fusobacterium nucleatum,851,106,996182,61,7
+NZ_CP024703.1,51175,Fusobacterium,848,51356,944994,0,6,Fusobacterium pseudoperiodonticum,2663009,50510,945181,0,665
+NZ_CP083637.1,6970,Gemella,1378,6970,989386,0,0,Gemella haemolysans,1379,6964,989386,0,6
+NZ_CP031243.1,158,Haemophilus,724,33870,962416,3,67,Haemophilus haemolyticus,726,158,996197,1,0
+NZ_AP018768.1,138,Haemophilus,724,33870,962416,3,67,Haemophilus influenzae,727,135,996210,8,3
+NZ_CP038817.1,22,Haemophilus,724,33870,962416,3,67,Haemophilus parahaemolyticus,735,22,996334,0,0
+NZ_CP035368.2,33619,Haemophilus,724,33870,962416,3,67,Haemophilus parainfluenzae,729,33419,962736,1,200
+NC_013203.1,15,Lancefieldella,2767353,15,996341,0,0,Lancefieldella parvula,1382,15,996341,0,0
+NZ_LR134378.1,410,Lautropia,47670,410,995946,0,0,Lautropia mirabilis,47671,410,995946,0,0
+NZ_AP019831.1,22,Leptotrichia,32067,22,996334,0,0,Leptotrichia trevisanii,109328,22,996334,0,0
+NZ_CP101528.1,36,Micrococcus,1269,143,996209,4,0,Micrococcus luteus,1270,34,996319,1,2
+NZ_CP126965.1,107,Micrococcus,1269,143,996209,4,0,Micrococcus lylae,1273,107,996249,0,0
+NZ_CP039886.1,4816,Neisseria,482,613925,381216,0,1215,Neisseria flavescens,484,4707,991326,214,109
+NZ_CP030820.1,5823,Neisseria,482,613925,381216,0,1215,Neisseria meningitidis,487,5691,990079,454,132
+NZ_CP053939.1,13722,Neisseria,482,613925,381216,0,1215,Neisseria mucosa,488,13069,981945,689,653
+NZ_CP073114.1,590779,Neisseria,482,613925,381216,0,1215,Neisseria subflava,28449,571780,405489,88,18999
+NZ_CP092048.1,176,Porphyromonas,836,182,995950,1,223,Porphyromonas gingivalis,837,176,996180,0,0
+NC_019960.1,31,Prevotella,838,6576,989620,10,150,Prevotella dentalis,52227,31,996325,0,0
+NZ_CP024696.1,1742,Prevotella,838,6576,989620,10,150,Prevotella intermedia,28131,1695,994614,0,47
+NZ_CP072363.1,36,Prevotella,838,6576,989620,10,150,Prevotella jejuni,1177574,36,996318,2,0
+AP018050.1,4869,Prevotella,838,6576,989620,10,150,Prevotella melaninogenica,28132,4781,991486,1,88
+NZ_CP072390.1,18,Prevotella,838,6576,989620,10,150,Prevotella scopos,589437,18,996338,0,0
+NZ_CP079201.1,163,Rothia,32207,172063,824153,136,4,Rothia dentocariosa,2047,162,996182,11,1
+NZ_CP079822.1,171717,Rothia,32207,172063,824153,136,4,Rothia mucilaginosa,43675,171707,824410,229,10
+NZ_CP102197.1,836,Schaalia,2529408,4384,961190,1597,29185,Schaalia odontolytica,1660,835,993705,1815,1
+CAHJXR010000003.1,32733,Schaalia,2529408,4384,961190,1597,29185,Schaalia sp. Marseille-Q2122,2736604,0,963623,0,32733
+NZ_LS483444.1,31,Streptococcus,1301,22297,974036,15,8,Streptococcus australis,113107,31,996316,9,0
+NZ_CP012646.1,21267,Streptococcus,1301,22297,974036,15,8,Streptococcus mitis,28037,20220,975089,0,1047
+NC_015875.1,111,Streptococcus,1301,22297,974036,15,8,Streptococcus pseudopneumoniae,257758,102,996235,10,9
+NZ_CP079193.1,876,Streptococcus,1301,22297,974036,15,8,Streptococcus suis,1307,855,995467,13,21
+NZ_CAKAHJ010000001.1,2059,Actinomyces,1654,43,992128,2139,2046,uncultured Actinomyces sp.,249061,0,994297,0,2059
+NZ_CALGPY010000005.1,20,Campylobacter,194,2858,993497,0,1,uncultured Campylobacter sp.,218934,0,996336,0,20
+NZ_CAKOJV010000001.1,74,Fusobacterium,848,51356,944994,0,6,uncultured Fusobacterium sp.,159267,0,996282,0,74
+NZ_CABPWA010000001.1,15,Peptostreptococcus,1257,0,996341,0,15,uncultured Peptostreptococcus sp.,169971,0,996341,0,15
+NZ_UQJH01000001.1,229,Porphyromonas,836,182,995950,1,223,uncultured Porphyromonas sp.,159274,0,996127,0,229
+NZ_CAJTJS010000001.1,30,Prevotella,838,6576,989620,10,150,uncultured Prevotella sp.,159272,0,996326,0,30
+NZ_CAKAIK010000001.1,187,Rothia,32207,172063,824153,136,4,uncultured Rothia sp.,316088,0,996169,0,187
+NZ_CAMNMG010000001.1,20,Streptococcus,1301,22297,974036,15,8,uncultured Streptococcus sp.,83427,0,996336,0,20
+NZ_CALHUL010000006.1,39,Treponema,157,31,996317,0,8,uncultured Treponema sp.,162155,0,996317,0,39
+NZ_CP020566.1,47,Veillonella,29465,27510,968724,0,122,Veillonella atypica,39777,47,996299,10,0
+NZ_LR134375.1,669,Veillonella,29465,27510,968724,0,122,Veillonella dispar,39778,644,995669,18,25
+NZ_AP022321.1,13303,Veillonella,29465,27510,968724,0,122,Veillonella nakazawae,2682456,12435,983052,1,868
+NZ_CP019721.1,13613,Veillonella,29465,27510,968724,0,122,Veillonella parvula,29466,13553,982692,51,60

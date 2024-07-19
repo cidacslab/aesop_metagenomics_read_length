@@ -1,0 +1,24 @@
+accession_id,total_reads,genus,genus_taxid,genus_true_positive,genus_true_negative,genus_false_positive,genus_false_negative,species,species_taxid,species_true_positive,species_true_negative,species_false_positive,species_false_negative
+NZ_CP046313.1,102605,Gemella,1378,101347,897340,2,1258,Gemella sanguinis,84135,100091,897342,0,2514
+NZ_CP024700.1,13163,Fusobacterium,848,13034,986752,32,129,Fusobacterium pseudoperiodonticum,2663009,9863,986783,1,3300
+NZ_CP126745.1,3146,Cutibacterium,1912216,3131,996801,0,15,Cutibacterium acnes,1747,3085,996801,0,61
+NZ_CP027235.1,116663,Haemophilus,724,115447,883282,2,1216,Haemophilus sp. oral taxon 036,712310,96488,883284,0,20175
+NZ_CP020566.1,10903,Veillonella,29465,10887,989040,4,16,Veillonella atypica,39777,10705,989044,0,198
+NZ_CP014239.1,33361,Selenomonas,970,33353,966585,1,8,Selenomonas sp. oral taxon 136,713030,28504,966586,0,4857
+NZ_CP032621.1,17769,Streptococcus,1301,17518,982128,50,251,Streptococcus gwangjuense,1433513,13487,982178,0,4282
+NZ_CP012544.1,26995,Campylobacter,194,26967,972948,4,28,Campylobacter showae,204,26717,972952,0,278
+NZ_AP019829.2,72581,Leptotrichia,32067,71089,927363,3,1492,Leptotrichia wadei,157687,63803,927366,0,8778
+NZ_CP027228.1,79930,Mogibacterium,86331,79345,920017,0,585,Mogibacterium diversum,114527,78613,920017,0,1317
+NZ_CP019668.1,57597,Burkholderia,32008,57249,942349,1,348,Burkholderia cenocepacia,95486,25058,942350,0,32539
+NZ_CP083898.1,7987,Zymomonas,541,7968,991960,0,19,Zymomonas mobilis,542,7968,991960,0,19
+NZ_CP072373.1,23246,Prevotella,838,22844,976701,0,402,Prevotella denticola,28129,21512,976701,0,1734
+NZ_CP032364.1,13425,Lachnoanaerobaculum,1164882,13371,986522,0,54,Lachnoanaerobaculum umeaense,617123,13265,986522,0,160
+NZ_CP027232.1,7109,Capnocytophaga,1016,7100,992838,0,9,Capnocytophaga sp. oral taxon 864,1316593,3916,992838,0,3193
+NZ_CP089305.1,92024,Limosilactobacillus,2742598,88317,907923,0,3707,Limosilactobacillus fermentum,1613,87832,907923,0,4192
+NC_001422.1,72672,Sinsheimervirus,1910954,0,927275,0,72672,Sinsheimervirus phiX174,10847,0,927275,0,72672
+NZ_CP050497.1,37051,Treponema,157,37032,962895,1,19,Treponema vincentii,69710,19989,962896,0,17062
+NZ_CP008849.1,138283,Alteromonas,226,137967,861659,5,316,Alteromonas australica,589873,80211,861664,0,58072
+NZ_CP031255.1,10756,Neisseria,482,10610,989188,3,146,Neisseria elongata,495,10238,989191,0,518
+NZ_CP054018.1,13554,Rothia,32207,13486,986392,1,68,Rothia dentocariosa,2047,13309,986393,0,245
+NC_000866.4,19743,Tequatrovirus,10663,18538,980204,0,1205,Tequatrovirus T4,10665,7505,980204,0,12238
+NC_002628.3,29384,Psimunavirus,186914,229,970563,0,29155,Methanothermobacter phage psiM100,173824,213,970563,0,29171

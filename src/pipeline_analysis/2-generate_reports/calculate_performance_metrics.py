@@ -1,5 +1,5 @@
 from utils.utility_functions import get_files_in_folder
-import os, sys
+import os, sys, csv
 
 
 def load_accession_taxids(input_file):
@@ -21,20 +21,21 @@ def load_reported_tax_abundance(input_file):
   print(f"Load total tax id reads file: {input_file}")
   reported_taxid_abundance = {}
   with open(input_file, 'r') as file:
-    next(file)
-    for line in file:
-      line_splits = line.strip().split(',')
-      #taxid = line_splits[2]
-      name = line_splits[3]
-      reads = int(float(line_splits[4]))
-      reported_taxid_abundance[name] = reads
+    csv_reader = csv.reader(file)
+    next(csv_reader)
+    for row in csv_reader:
+      taxid = row[2].strip()
+      # name = row[3]
+      reads = int(row[4].strip())
+      reported_taxid_abundance[taxid] = reads
+  print(reported_taxid_abundance)
   return reported_taxid_abundance
 
 
 def load_accession_lineage_classified(input_file):
   print(f"Load accession level abundance file: {input_file}")
   accession_lineage_taxa = {}
-  lineage_taxa_counts = [{} for _ in range(9)]
+  lineage_taxa_counts = [{} for _ in range(10)]
   lineage_taxa_counts[0] = {"total_reads": 0}
   with open(input_file, 'r') as file:
     next(file)
@@ -46,10 +47,10 @@ def load_accession_lineage_classified(input_file):
       lineage_taxa_counts[0][accession_id] = accession_total_reads
       lineage_taxa_counts[0]["total_reads"] += accession_total_reads
       index = 1
-      for i in range(2, 30, 3):
+      for i in range(3, 30, 3):
         taxname = line_splits[i]
         taxid = int(line_splits[i+1])
-        mapped_reads = int(line_splits[i+1])
+        mapped_reads = int(line_splits[i+2])
         accession_lineage_taxa[accession_id].append(taxid)
         if taxid not in lineage_taxa_counts[index]:
           lineage_taxa_counts[index][taxid] = {"tax_name": taxname, "total_reads": 0, "correct_mapped": 0}
@@ -60,6 +61,7 @@ def load_accession_lineage_classified(input_file):
 
 
 def get_confusion_matrix_values(sample_total_reads, total_tax_reads, total_mapped_to_tax, correct_tax_reads):
+  # print(f"{sample_total_reads}, {total_tax_reads}, {total_mapped_to_tax}, {correct_tax_reads}")
   # reads from tax_id mapped to correct tax_id
   true_positive = correct_tax_reads
   # reads from tax_id not mapped to this tax_id
@@ -95,11 +97,14 @@ def calculate_confusion_matrix(accession_lineage_taxa, lineage_taxa_classified, 
     species_total_classified = reported_tax_abundance.get(species_taxid, 0)
     
     genus_taxid = lineage_taxa[-2]
-    genus_name = lineage_taxa_classified[-1][genus_taxid]["tax_name"]
+    genus_name = lineage_taxa_classified[-2][genus_taxid]["tax_name"]
     genus_total_reads = lineage_taxa_classified[-2][genus_taxid]["total_reads"]
     genus_correct_reads = lineage_taxa_classified[-2][genus_taxid]["correct_mapped"]
     genus_total_classified = reported_tax_abundance.get(genus_taxid, 0)
 
+    print(f"{species_taxid}, {species_name}, {species_total_reads}, {species_correct_reads}, {species_total_classified}")
+    print(f"{genus_taxid}, {genus_name}, {genus_total_reads}, {genus_correct_reads}, {genus_total_classified}")
+    
     genus_metrics = get_confusion_matrix_values(sample_total_reads, genus_total_reads, genus_total_classified, genus_correct_reads)
     species_metrics = get_confusion_matrix_values(sample_total_reads, species_total_reads, species_total_classified, species_correct_reads)
 
@@ -133,9 +138,9 @@ def main():
 
     filename = os.path.basename(file).replace(input_extension, "")
     
-    splits = filename.split("_")
-    meta_filename = "_".join(splits[0:-2])
-    metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
+    # splits = filename.split("_")
+    # meta_filename = "_".join(splits[0:-2])
+    # metadata_file = os.path.join(input_metadata_path, meta_filename + ".csv")
     # accession_taxids = load_accession_taxids(metadata_file)
 
     accession_lineage_classified_file = os.path.join(input_metrics_path, filename + "_level_abundance.csv")

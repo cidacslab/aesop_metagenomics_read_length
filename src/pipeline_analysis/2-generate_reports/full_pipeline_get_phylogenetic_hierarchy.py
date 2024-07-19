@@ -64,7 +64,7 @@ def count_abundance_by_accession_reads(accession_taxid_counts, accession_abundan
     #     abundance_by_level[level][0] = ""
     #     abundance_by_level[level][1] = 0
     #     abundance_by_level[level][2] = last_abundance
-    #   last_abundance = abundance_by_level[level][1]
+    #   last_abundance = abundance_by_level[level][2]
 
     output_content += ",".join([f"{a[0]},{a[1]},{a[2]}" for a in abundance_by_level])
     output_content += "\n"

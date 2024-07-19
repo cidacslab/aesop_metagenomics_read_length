@@ -65,7 +65,7 @@ class TreeNode:
     parent_node = last_node
     # look for parent       
     while parent_node is not None:
-      if parent_node.level_count < self.level_count:
+      if parent_node.level_enum < self.level_enum or parent_node.level_count < self.level_count:
         # set children and parent attributes
         parent_node.children.append(self)
         self.parent = parent_node
