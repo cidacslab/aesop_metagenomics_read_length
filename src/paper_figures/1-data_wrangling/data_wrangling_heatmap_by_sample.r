@@ -7,7 +7,7 @@ data_wrangling_heatmap_by_sample <- function(
     metric_attribute,
     output_file = NULL,
     load_pathogens = FALSE,
-    pathogens_realm = c("Bacteria", "Viruses")) {
+    pathogens_realm = c("bacteria", "viruses")) {
 
     # output_file <- file
     # load_pathogens <- TRUE
