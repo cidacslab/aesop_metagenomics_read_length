@@ -1,5 +1,4 @@
-import os, datetime, random
-from utils.utility_functions import get_files_in_folder
+import os, random
 from utils.utility_functions import get_accessions
 from utils.utility_functions import check_composition_abundance
 
