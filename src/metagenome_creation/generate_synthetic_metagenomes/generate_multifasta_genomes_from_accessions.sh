@@ -21,12 +21,13 @@ trap 'echo "\"${last_command}\" command ended with exit code $?." >&2' EXIT
 tsv_file="$1"
 genome_folder="$2"
 output_file="$3"
+accession_tmp_file="accession_file_$(uuidgen).txt"
 
 count=0  # Variable to track the number of accessions used
 
 # Get the accession numbers from the CSV file (excluding the first line/header), shuffle the list, and save it to a temporary file
 # awk -F '\t' 'NR>1 {print $1}' "$tsv_file" > accession_file.txt
-awk -F '\t' '{print $1}' "$tsv_file" > accession_file.txt
+awk -F '\t' '{print $1}' "$tsv_file" > "$accession_tmp_file"
 
 # Create an empty output file
 >"$output_file"
@@ -48,11 +49,11 @@ while IFS= read -r accession; do
   else
     echo "Genome file '$genome_file' does not exist."
   fi
-done < accession_file.txt
+done < $accession_tmp_file
 
 # Remove the temporary file
-echo "Removing intermediate file: rm accession_file.txt"
-rm accession_file.txt
+echo "Removing intermediate file: rm $accession_tmp_file"
+rm $accession_tmp_file
 
 echo "Multifasta file '$output_file' created successfully with '$count' accession numbers"
 
