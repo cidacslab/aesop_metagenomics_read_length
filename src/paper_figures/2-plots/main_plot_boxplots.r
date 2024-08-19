@@ -1,18 +1,18 @@
 
-source("src/paper/data_wrangling_metrics.r")
-source("src/paper/generate_boxplots.r")
+source("src/paper_figures/1-data_wrangling/data_wrangling_metrics.r")
+source("src/paper_figures/2-plots/generate_boxplots.r")
 
-results_folder <- paste0(results_folder_root, "fig1/")
-
+# results_folder <- paste0(results_folder_root, "fig1/")
+# dir.create(results_folder, recursive = TRUE)
 ################################ VIRUSES MEANS #################################
 
-df_virus <- data_wrangling_metrics(df_metrics, TRUE, c("Viruses"))
+df_virus <- data_wrangling_metrics(df_metrics, TRUE, c("viruses"))
 output_file <- paste0(results_folder, "metrics_patho_viruses.csv")
 write.csv(df_virus, file = output_file, row.names = TRUE)
 
 ################################ BACTERIA MEANS ################################
 
-df_bacteria <- data_wrangling_metrics(df_metrics, TRUE, c("Bacteria"))
+df_bacteria <- data_wrangling_metrics(df_metrics, TRUE, c("bacteria"))
 output_file <- paste0(results_folder, "metrics_patho_bacteria.csv")
 write.csv(df_bacteria, file = output_file, row.names = TRUE)
 

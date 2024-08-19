@@ -1,8 +1,8 @@
 
-source("src/aesop/plot_heatmap.r")
-source("src/aesop/parameters_to_fit_page.r")
-source("src/paper/data_wrangling_heatmap.r")
-source("src/paper/data_wrangling_heatmap_by_sample.r")
+source("src/paper_figures/2-plots/heatmap_plot.r")
+source("src/paper_figures/2-plots/heatmap_parameters_to_fit_page.r")
+source("src/paper_figures/1-data_wrangling/data_wrangling_heatmap.r")
+source("src/paper_figures/1-data_wrangling/data_wrangling_heatmap_by_sample.r")
 
 ############################ GET HEATMAP PARAMETERS ############################
 breaks <- c(
@@ -16,7 +16,7 @@ colors <- c(
 )
 
 metric <- "species_sensitivity"
-df_sens <- data_wrangling_heatmap(df_metrics, metric, NULL, TRUE, c("Viruses"))
+df_sens <- data_wrangling_heatmap(df_metrics, metric, NULL, TRUE, c("viruses"))
 
 n_rows <- nrow(df_sens)
 plot_parameters <- parameters_to_fit_page(n_rows, "")
@@ -32,7 +32,7 @@ metrics <- c("sensitivity", "specificity", "accuracy", "precision")
 for (metric in metrics) {
   metric_col <- paste0("species_", metric)
   file <- paste0(results_folder, "heatmap_", metric, "_patho_virus.csv")
-  df <- data_wrangling_heatmap(df_metrics, metric_col, file, TRUE, c("Viruses"))
+  df <- data_wrangling_heatmap(df_metrics, metric_col, file, TRUE, c("viruses"))
 
   order_in_sens <- match(df_sens$species, df$species)
   df <- as.data.frame(df[order_in_sens, ]) %>%
@@ -43,29 +43,33 @@ for (metric in metrics) {
   plots[[metric]] <- plot
 }
 
-for (metric in metrics) {
-  metric_col <- paste0("species_", metric)
-  file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria.csv")
-  df <- data_wrangling_heatmap(df_metrics, metric_col, file, TRUE, c("Bacteria"))
+# metric <- "species_sensitivity"
+# df_sens <- data_wrangling_heatmap(df_metrics, metric, NULL, TRUE, c("bacteria"))
 
-  df <- as.data.frame(df[order_in_sens, ]) %>%
-    column_to_rownames(var = "species")
+# for (metric in metrics) {
+#   metric_col <- paste0("species_", metric)
+#   file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria.csv")
+#   df <- data_wrangling_heatmap(df_metrics, metric_col, file, TRUE, c("bacteria"))
 
-  file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria")
+#   order_in_sens <- match(df_sens$species, df$species)
+#   df <- as.data.frame(df[order_in_sens, ]) %>%
+#     column_to_rownames(var = "species")
 
-  n_rows <- nrow(df_bacteria)
-  file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria_sample")
-  plot_parameters <- parameters_to_fit_page(n_rows, file, 85)
+#   file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria")
 
-  for (parameters in plot_parameters) {
-    df <- df_bacteria[parameters[[1]]:parameters[[2]], ]
-    file <- parameters[[4]]
-    heigth <- parameters[[3]]
-    width <- 14
-    plot <- plot_heatmap_function(df, width, heigth, file, breaks, colors)
-    plots[[metric]] <- plot
-  }
-}
+#   n_rows <- nrow(df_bacteria)
+#   file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria_sample")
+#   plot_parameters <- parameters_to_fit_page(n_rows, file, 85)
+
+#   for (parameters in plot_parameters) {
+#     df <- df_bacteria[parameters[[1]]:parameters[[2]], ]
+#     file <- parameters[[4]]
+#     heigth <- parameters[[3]]
+#     width <- 14
+#     plot <- plot_heatmap_function(df, width, heigth, file, breaks, colors)
+#     plots[[metric]] <- plot
+#   }
+# }
 
 
 ############################### HEATMAP METRICS ################################
@@ -73,12 +77,17 @@ for (metric in metrics) {
 metric <- metrics[[1]]
 metric_col <- paste0("species_", metric)
 file <- paste0(results_folder, "heatmap_", metric, "_patho_virus_sample.csv")
-df <- data_wrangling_heatmap_by_sample(df_metrics, metric_col, file, TRUE, c("Viruses"))
+df <- data_wrangling_heatmap_by_sample(df_metrics, metric_col, file, TRUE, c("viruses"))
 
 df <- df %>%
   column_to_rownames(var = "species")
 
+n_rows <- nrow(df)
+plot_parameters <- parameters_to_fit_page(n_rows, "")
+parameters <- plot_parameters[[1]]
+heigth <- parameters[[3]]
 width <- 10
+
 file <- paste0(results_folder, "heatmap_", metric, "_patho_virus_sample.png")
 
 pheatmap(
@@ -103,7 +112,7 @@ pheatmap(
 ############################### HEATMAP METRICS ################################
 ## BACTERIA BY SAMPLE
 file <- paste0(results_folder, "heatmap_", metric, "_patho_bacteria_sample.csv")
-df <- data_wrangling_heatmap_by_sample(df_metrics, metric_col, file, TRUE, c("Bacteria"))
+df <- data_wrangling_heatmap_by_sample(df_metrics, metric_col, file, TRUE, c("bacteria"))
 
 df_bacteria <- df %>%
   column_to_rownames(var = "species")

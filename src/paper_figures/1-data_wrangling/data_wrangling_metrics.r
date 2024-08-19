@@ -5,7 +5,7 @@ require(dplyr)
 data_wrangling_metrics <- function(
     df_metrics,
     load_pathogens = FALSE,
-    pathogens_realm = c("Bacteria", "Viruses")) {
+    pathogens_realm = c("bacteria", "viruses")) {
 
     df_patho_taxon <- df_metrics
     if (load_pathogens) {

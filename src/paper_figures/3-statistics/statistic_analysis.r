@@ -4,8 +4,8 @@ require(dplyr)
 library(PMCMR)
 library(ggpubr)
 
-df_virus <- data_wrangling_metrics(df_metrics, TRUE, c("Viruses"))
-df_bacteria <- data_wrangling_metrics(df_metrics, TRUE, c("Bacteria"))
+df_virus <- data_wrangling_metrics(df_metrics, TRUE, c("viruses"))
+df_bacteria <- data_wrangling_metrics(df_metrics, TRUE, c("bacteria"))
 df_taxons <- data_wrangling_metrics(df_metrics)
 
 ############################## SUMMARY STATISTIC ###############################
@@ -131,3 +131,4 @@ PMCMRplus::frdAllPairsNemenyiTest(
     df_taxons$species_precision,
     df_taxons$read_length,
     df_taxons$species)
+
