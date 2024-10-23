@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/715757593.svg)](https://doi.org/10.5281/zenodo.13983458)
+
 # Optimizing Next-Generation Sequencing Efficiency in Clinical Settings: Analysis of Read Length Impact on Cost and Performance
 
 ## Abstract
