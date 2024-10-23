@@ -61,7 +61,7 @@ Follow the steps detailed in our [METHODS](#methods)
 If you use this pipeline in your research, please cite the following paper:
 
 
-> Meirelles, P. M.; Viana, P. A. B.; Tschoeke, D. A.; de Moraes, L.; Amorim, L.; Barral-Netto, M.; Khouri, R.; Ramos, P. I. P. (2024). Optimizing Next-Generation Sequencing Efficiency in Clinical Settings: Analysis of Read Length Impact on Cost and Performance.
+> Meirelles, P. M.; Viana, P. A. B.; Tschoeke, D. A.; de Moraes, L.; Amorim, L.; Barral-Netto, M.; Khouri, R.; Ramos, P. I. P. (2024). Optimizing Next-Generation Sequencing Efficiency in Clinical Settings: Analysis of Read Length Impact on Cost and Performance. BMC Genomics 25, 856 (2024). https://doi.org/10.1186/s12864-024-10778-1
 
 * Corresponding Author: Pedro M Meirelles (pmeirelles@ufba.br)
 * On any code issues, correspond to: Pablo Viana (pablo.alessandro@gmail.com)
